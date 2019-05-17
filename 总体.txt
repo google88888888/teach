@@ -63,10 +63,15 @@ class#
 table#
 opacity#
 padding#
+变量类型（undefined boolean number string object null）
 push
 splice
 数组倒装
 数组查重
+div左右上下居中
+display
+position
+
 
 
 
@@ -87,6 +92,14 @@ splice
 
 （二）不稳定的
 （1）易教主c，了解多，周三晚上问情况
+c语言概要#
+dev c++安装#
+eclipse安装#
+eclipse安装解释
+gcc安装解释
+jdk 8安装解释
+
+
 （2）易教c，上海，转工作，尽量上前端
 （3）美国c神州
 
