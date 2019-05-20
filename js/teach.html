@@ -2,14 +2,21 @@
 <head>
 <script type="text/javascript">
 	function onloadFunction(){
-        var a=["a"];
-		alert(a);
-		for(var i=1;i<11;i++){
-		    var pushData = "a"+i;
-			a.push(pushData);
-		    alert(a);
+        var array=[1,2,3,32,23,3,34,53];
+		//[1,2,4,3]
 		
+		var newArray=[];
+		for(var i=0;i<array.length;i++){
+		    if(i==1){
+			    newArray.push(array[i]);
+				newArray.push(4);
+			}else{
+			    newArray.push(array[i]);
+			}
 		}
+		alert(newArray);
+		
+		
 	}
 </script>
 <style type="text/css">

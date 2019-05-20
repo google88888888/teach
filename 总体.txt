@@ -63,8 +63,8 @@ class#
 table#
 opacity#
 padding#
-变量类型（undefined boolean number string object null）
-push
+变量类型（undefined boolean number string object null）#
+push#
 splice
 数组倒装
 数组查重
