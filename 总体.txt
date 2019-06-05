@@ -26,14 +26,14 @@ for#
 数组#
 连加100#
 border-radius#
+push#
+opacity#
 cursor
 链接
 方法（参数，返回）
 class
 table
-opacity
 padding
-push
 splice
 数组倒装
 数组查重
