@@ -9,7 +9,7 @@ https://www.linkedin.com/in/%E4%B9%85%E7%BF%94-%E5%AD%9F-a69233153/
 
 
 （一）稳定的
-（1）周一周三晚上7点30到9点30（阳光）
+（1）周六上午9点到11点 周蔚
 div布局#
 图片#
 带图片布局#
@@ -38,72 +38,32 @@ splice
 数组倒装
 数组查重
 
-
-
-
-
-（2）周五晚上6点30到8点30（易）
-图片#
-文字样式#
-变量#
-加减乘除余#
-if#
-for#
-while#
-数组#
-连加100#
-border-radius#
-cursor#
-链接#
-或#
-div布局#
-比较大小方法#
-与#
-非#
-方法（参数，返回）#
-class#
-table#
-opacity#
-padding#
-变量类型（undefined boolean number string object null）#
-push#
-if 多个else
-||和&&和！=
+（2）周日上午10点到12点 谈木天
+div布局
+图片
+带图片布局
+注释
+变量（undefined boolean number string null object）
+加减乘除余
+文字样式
+if
+比较大小方法
+或
+与
+非
+for
+数组
+连加100
+border-radius
+push
+opacity
+cursor
+链接
+方法（参数，返回）
+class
+table
+padding
 splice
 数组倒装
 数组查重
-div左右上下居中
-display
-position
-
-
-
-
-
-
-文溪鼎园 
-4月12日 上了两个小时300
-4月19日 上了两个小时300
-
-4月一共在神州收入： 300*2=600
-4月应付神州中介费： 600*0.2=120
-
-你好，上面是我4月份上课记录，麻烦看一下啊，没问题的话我就支付宝转账给你
-
-
-
-
-
-（二）不稳定的
-（1）易教主c，了解多，周三晚上问情况
-c语言概要#
-dev c++安装#
-eclipse安装#
-eclipse安装解释
-gcc安装解释
-jdk 8安装解释
-
-
-（2）易教c，上海，转工作，尽量上前端
-（3）美国c神州
 
