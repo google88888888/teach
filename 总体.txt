@@ -9,7 +9,7 @@ https://www.linkedin.com/in/%E4%B9%85%E7%BF%94-%E5%AD%9F-a69233153/
 
 
 （一）稳定的
-（1）周六上午9点到11点 周蔚
+（1）周六下午2点到4点 周蔚
 div布局#
 图片#
 带图片布局#
@@ -28,11 +28,11 @@ for#
 border-radius#
 push#
 opacity#
+class#
 table
 cursor
 链接
 方法（参数，返回）
-class
 padding
 splice
 数组倒装
@@ -43,7 +43,7 @@ splice
 notepad#
 浏览器console#
 html基本结构#
-div布局
+div布局#
 图片
 带图片布局
 注释
