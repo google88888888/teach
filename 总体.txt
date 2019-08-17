@@ -50,9 +50,9 @@ notepad#
 浏览器console#
 html基本结构#
 div布局#
-图片
-带图片布局
-注释
+图片#
+带图片布局#
+注释#
 变量（undefined boolean number string null object）
 加减乘除余
 文字样式
