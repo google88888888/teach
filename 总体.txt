@@ -81,6 +81,43 @@ split
 数组查重
 
 
+（3）戈雅公寓
+自我介绍#
+notepad
+浏览器console
+html基本结构
+div布局
+图片
+带图片布局
+注释
+变量（undefined boolean number string null object）
+文具名称价格
+各科分数名称价格总和
+加减乘除余
+文字样式（颜色16进制，font-size，font-weight，上下左右居中）
+if
+比较大小方法
+或
+与
+非
+for
+数组
+连加100
+border-radius
+push
+opacity
+cursor
+链接
+方法（参数，返回）
+class
+table
+padding
+splice
+split
+数组倒装
+数组查重
+
+
 
 10月4日 下午4点到5点30 戈雅公寓
 10月4日 晚上7点到9点 周蔚
