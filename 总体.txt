@@ -44,7 +44,7 @@ cursor
 冒泡排序
 有序数组的平方https://leetcode-cn.com/problems/squares-of-a-sorted-array/
 
-（2）周日上午9点到11点 谈木天
+（2）周日上午9点30到11点30 谈木天
 自我介绍#
 notepad#
 浏览器console#
@@ -66,10 +66,10 @@ if#
 for#
 数组（初始化，选择，长度）#
 连加100#
-border-radius ，border-top-radius ，border-bottom-radius 
+border-radius ，border-top-radius ，border-bottom-radius#
 opacity
-cursor
-链接
+cursor#
+链接#
 push
 方法（参数，返回）
 class
@@ -119,11 +119,11 @@ split
 
 
 （4）周六下午2点30到4点30 金色海岸二栋二单元802
-自我介绍
-notepad
-浏览器console
-html基本结构
-div布局
+自我介绍#
+notepad#
+浏览器console#
+html基本结构#
+div布局#
 图片
 带图片布局
 注释
