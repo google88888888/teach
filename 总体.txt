@@ -126,13 +126,14 @@ html基本结构#
 div布局#
 图片#
 带图片布局#
-文字样式（颜色16进制，font-size，font-weight，上下左右居中）
+文字样式（颜色16进制，font-size，font-weight，上下左右居中）#
+border
+border-radius
 注释
 变量（undefined boolean number string null object）
 文具名称价格
 各科分数名称价格总和
 加减乘除余
-
 if
 比较大小方法
 或
@@ -141,7 +142,7 @@ if
 for
 数组（初始化，选择，长度）
 连加100
-border-radius
+
 push
 opacity
 cursor
