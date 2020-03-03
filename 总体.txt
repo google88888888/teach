@@ -31,6 +31,8 @@ opacity#
 class#
 table#
 链接#
+像素大厨#
+手机
 方法（参数，返回）
 padding
 splice
@@ -70,7 +72,7 @@ border-radius ，border-top-radius ，border-bottom-radius#
 opacity#
 cursor#
 链接#
-push
+push#
 方法（参数，返回）
 class
 table
