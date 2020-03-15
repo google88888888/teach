@@ -167,27 +167,14 @@ void Swap (int i, int j){    //交换
 //}
 double Closest(int l, int r){
 	
-//     printf("0000000000\n");
-//	 printf("%d\n",l); 
-//	 printf("11111111\n");
-//	 printf("%d\n",r); 
-
-	
 	if(r-l==1){
-//	 	printf("22222222222222\n");
-//	 	printf("%.2lf\n",Dis2(a[l],a[l+1]));
-
 		return Dis2(a[l],a[l+1]);
 	}
 	else if(r-l==2){
 		double dis01,dis02,dis12;
 		dis01=Dis2(a[l],a[l+1]), dis02=Dis2(a[l],a[l+2]), dis12=Dis2(a[l+1],a[l+2]);
 		dis01=(dis01<dis02)?dis01:dis02;
-		dis01=(dis01<dis12)?dis01:dis12;
-		
-	 	printf("333333333333\n");
-	 	printf("%.2lf\n",dis01);
-		
+		dis01=(dis01<dis12)?dis01:dis12;	
 		return dis01;
 	}
 //	 double minL,minR,min=DOUBLEMAX,flagX,t;
@@ -197,30 +184,11 @@ double Closest(int l, int r){
 	 //QuickSort_x(l,r); 
 	 int middle=(l+r)/2;
 	 
-	 
-//	printf("444444444444444\n");
-//	printf("%d\n",middle);
-	 
 	double minL=Closest(l,middle);    //求得两边的最小距离， 取较小值 ；这行代码有问题！！
 	 
-//	printf("55555555555555555\n");
-//	printf("%d\n",minL);
-	  
 	double minR=Closest(middle+1,r);
-	 
-//	printf("66666666666666666\n");
-//	printf("%d\n",minR); 
-	 
+	
 	double min=(minL<minR)?minL:minR;
-	 
-//	 printf("0000000000\n");
-//	 printf("%d\n",middle); 
-//	 printf("11111111\n");
-//	 printf("%.2lf\n",minL);
-//	 printf("22222222222222\n");
-//	 printf("%.2lf\n",minR);
-//	 printf("22222222222222\n");
-//	 printf("%.2lf\n",min);
 	 
 	 /*merge*/
 	//QuickSort_y(l,r);    //先对Y坐标排序 
@@ -253,8 +221,6 @@ double Closest(int l, int r){
 			min=(t<min)?t:min;
 		}
 	}
-			printf("11111\n");
-			printf("%.2lf\n",min);
 	return min;
 }
 int main(){
@@ -263,14 +229,6 @@ int main(){
 	while(scanf("%d",&n)&&n!=0){
 		for(i=0;i<n;++i)scanf("%lf %lf",&a[i].x,&a[i].y);
 		sort(a, a + n, cmp_x); 
-		
-//		for(int i=0;i<n;i++){
-//			printf("11111\n");
-//			printf("%.2lf\n",a[i].x);
-//			printf("%.2lf\n",a[i].y);
-//			printf("222222222\n");
-//		}
-		
 		printf("%.2lf\n",Closest(0,n-1)/2);
 	}
 	return 0;
