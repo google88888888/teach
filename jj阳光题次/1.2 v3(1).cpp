@@ -156,11 +156,10 @@ double Closest(int l, int r){
 	 double minL,minR,min=DOUBLEMAX,flagX,t;
 	 int div,i,j,k;
 	 Point b[100005];
-	 /*divide*/
-	 flagX=MidMid_x(l,r);    //函数作用在代码处有解释 
-	 div=Partition_x(l,r,flagX);
-	 minL=Closest(l,div);    //求得两边的最小距离， 取较小值 ；这行代码有问题！！ 
-	 minR=Closest(div+1,r);
+	 /*divide*/  
+	 QuickSort_x(l,r); 
+	 minL=Closest(l,(l+r)/2);    //求得两边的最小距离， 取较小值 ；这行代码有问题！！ 
+	 minR=Closest((l+r)/2+1,r);
 	 min=(minL<minR)?minL:minR;
 	 /*merge*/
 	 QuickSort_y(l,r);    //先对Y坐标排序 
@@ -179,7 +178,7 @@ int main(){
 	double dis01,dis02,dis12;
 	while(scanf("%d",&n)&&n!=0){
 		for(i=0;i<n;++i)scanf("%lf %lf",&a[i].x,&a[i].y);
-		printf("%.2f\n",pow(Closest(0,n-1),0.5)/2);
+		printf("%.2f\n",sqrt(Closest(0,n-1))/2);
 	}
 	return 0;
 }
