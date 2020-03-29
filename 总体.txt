@@ -32,7 +32,7 @@ class#
 table#
 链接#
 像素大厨#
-手机
+手机#
 方法（参数，返回）
 padding
 splice
@@ -73,6 +73,8 @@ opacity#
 cursor#
 链接#
 push#
+像素大厨#
+手机端
 方法（参数，返回）
 class
 table
@@ -123,11 +125,11 @@ split
 数组查重
 
 
-（4）jj阳光方股票 周六晚上9点到11点  teamviewId 1270710171
-
-（5）jj易教卢 时间每次商量
 
 
+（4）jj易教卢 时间每次商量
+
+（5）jj易教上海大三作业 周六晚上7点到9点  teamviewId 
 
 
 
