@@ -90,6 +90,7 @@ split
 自我介绍#
 notepad#
 浏览器console#
+
 html基本结构#
 div布局#
 图片#
@@ -127,7 +128,45 @@ split
 
 
 
-（4）jj易教卢 时间每次商量
+（4）jj易教卢 时间每次商量 4月7号晚上7点30-9点30
+自我介绍#
+notepad#
+浏览器console
+html基本结构#
+div布局
+图片
+带图片布局
+注释
+变量（undefined boolean number string null object）
+文具名称价格
+各科分数名称价格总和
+加减乘除余
+文字样式（颜色16进制，font-size，font-weight，上下左右居中）
+if
+比较大小方法
+或
+与
+非
+for
+数组（初始化，选择，长度）
+连加100
+border-radius ，border-top-radius ，border-bottom-radius
+opacity
+cursor
+链接
+push
+像素大厨
+手机端
+方法（参数，返回）
+class
+table
+padding
+splice
+split
+数组倒装
+数组查重
+
+
 
 （5）jj易教上海大三作业 周六晚上7点到9点  teamviewId 
 
