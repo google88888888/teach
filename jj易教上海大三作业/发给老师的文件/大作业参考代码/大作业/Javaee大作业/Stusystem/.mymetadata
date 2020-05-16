@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="Stusystem"
+  id="myeclipse.1557727108091"
+  context-root="/GameCenter"
+  j2ee-spec="5.0"
+  archive="Stusystem.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

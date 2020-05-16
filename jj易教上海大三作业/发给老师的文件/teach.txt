@@ -1,0 +1,18 @@
+html   css   js 
+                 类库：jquery
+                 框架思想：m                           v                   vm 
+                                 model                 view              viewmode  
+                                 mvvm框架代表：react vue angular                      
+                                 
+                                 react全家桶包括：react    react-router    redux
+
+
+作业及完成时间
+
+实验报告4			            	5月23号之前
+大作业（学生信息系统），有原始代码  
+需要建立学生数据库			5月23号之前
+
+渗透测试与前端相结合部分
+
+
