@@ -4,34 +4,24 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        .sitebar{
-            width: 200px;
-            background-color: green;
-        }
-        .content{
-            position: absolute;
-            left: 200px;
-            right: 0;
-            top: 0;
-            background-color: red;
-        }
+
     </style>
 	<script type="text/javascript">
 	    function test(){
-		    function a(){}
-			function b(){}
-			console.log(a===a);  //true
-			console.log(a===b);  //false
-			console.log(a.bind(this)===a.bind(this));  //false
 		}
 	</script>
 </head>
 <body onload="test()">
-    <div class="content">右侧主体自适应区块</div>
-    <div class="sitebar">左侧定宽200px区块</div>
+
+<table border="1">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
 </body>
 </html>
