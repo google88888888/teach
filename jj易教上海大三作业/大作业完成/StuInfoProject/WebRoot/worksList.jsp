@@ -26,7 +26,10 @@
    	           <div style="float:left;width:100px;text-align:center;font-size:30px;">
    	               	工资
    	           </div>
-   	           <div style="float:left;width:600px;text-align:center;font-size:30px;">
+   	           <div style="float:left;width:200px;text-align:center;font-size:30px;">
+   	               	联系方式
+   	           </div>
+   	           <div style="float:left;width:400px;text-align:center;font-size:30px;">
    	               	描述
    	           </div>
    	           <div style="clear:both">
@@ -39,6 +42,7 @@
    	      	           String company = (String)worksList.get(i).getCompany();
    	      	           String position = (String)worksList.get(i).getPosition();
    	      	           String salary = (String)worksList.get(i).getSalary();
+   	      	           String phone = (String)worksList.get(i).getPhone();
    	      	           String description = (String)worksList.get(i).getDescription();
    	   %>
    	   
@@ -55,7 +59,10 @@
    	           <div style="float:left;width:100px;text-align:center;">
    	               	<%= salary %>
    	           </div>
-   	           <div style="float:left;width:600px;text-align:left;">
+   	           <div style="float:left;width:200px;text-align:center;">
+   	               	<%= phone %>
+   	           </div>
+   	           <div style="float:left;width:400px;text-align:left;">
    	               	<%= description %>
    	           </div>
    	           <div style="clear:both">

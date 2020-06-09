@@ -5,6 +5,7 @@ public class Works {
     private String company;
     private String position;
     private String salary;
+    private String phone;
     private String description;
 
 
@@ -22,6 +23,9 @@ public class Works {
 
     public void setSalary(String salary) {
         this.salary = salary;
+    }
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public void setDescription(String description) {
@@ -42,6 +46,10 @@ public class Works {
 
     public String getSalary() {
         return salary;
+    }
+    
+    public String getPhone() {
+        return phone;
     }
 
     public String getDescription() {

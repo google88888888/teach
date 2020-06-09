@@ -28,7 +28,8 @@ public class WorksService{
 					info.setCompany(rs.getString(2));   
 					info.setPosition(rs.getString(3));
 					info.setSalary(rs.getString(4));
-					info.setDescription(rs.getString(5));
+					info.setPhone(rs.getString(5));
+					info.setDescription(rs.getString(6));
 					A.add(info);	
 				}
 	 			return A;
