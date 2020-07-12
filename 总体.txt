@@ -19,59 +19,7 @@ https://101jiajiao.com/Student/
 
 
 （一）稳定的
-（1）周五晚上7点30到9点30 周蔚  teamviewId 1548137259
-（1.1）
-div布局#
-图片#
-带图片布局#
-注释#
-变量（undefined boolean number string null object）#
-加减乘除余#
-文字样式#
-if#
-比较大小方法#
-或#
-与#
-非#
-for#
-数组#
-连加100#
-border-radius#
-push#
-opacity#
-class#
-table#
-链接#
-像素大厨#
-手机#
-padding#
-方法（参数，返回）
-返回对象
-传入人名、年龄、工作等返回对象
-传入上海一个区的所有公司名称，人员，总利润，税费情况汇总
-传入上海一个区的所有公司名称，人员，总利润，税费情况汇总计算投入产出比最好情况
-splice
-cursor
-数组倒装
-数组查重
-找数组中最大值
-找数组中最小值
-数组中有1到9若干个，找个数最多的那个
-两数之和https://leetcode-cn.com/problems/two-sum/
-冒泡排序
-有序数组的平方https://leetcode-cn.com/problems/squares-of-a-sorted-array/
-
-（1.2）
-题解编号 38066
-题目编号 10000
-知识点
-int 
-cin
-cout
-加减乘除余
-
-
-（2）周日上午9点30到11点30 谈木天  teamviewId 1513256861
+（1）周日上午9点30到11点30 谈木天  teamviewId 1513256861
 自我介绍#
 notepad#
 浏览器console#
@@ -112,7 +60,64 @@ split
 
 
 
-（3）jj易教卢 时间每次商量 4月7号晚上7点30-9点30
+
+
+（2）周日晚上7点30到9点30 周蔚  teamviewId 1548137259
+（2.1）
+div布局#
+图片#
+带图片布局#
+注释#
+变量（undefined boolean number string null object）#
+加减乘除余#
+文字样式#
+if#
+比较大小方法#
+或#
+与#
+非#
+for#
+数组#
+连加100#
+border-radius#
+push#
+opacity#
+class#
+table#
+链接#
+像素大厨#
+手机#
+padding#
+方法（参数，返回）
+返回对象
+传入人名、年龄、工作等返回对象
+传入上海一个区的所有公司名称，人员，总利润，税费情况汇总
+传入上海一个区的所有公司名称，人员，总利润，税费情况汇总计算投入产出比最好情况
+splice
+cursor
+数组倒装
+数组查重
+找数组中最大值
+找数组中最小值
+数组中有1到9若干个，找个数最多的那个
+两数之和https://leetcode-cn.com/problems/two-sum/
+冒泡排序
+有序数组的平方https://leetcode-cn.com/problems/squares-of-a-sorted-array/
+
+（2.2）
+题解编号 38066
+题目编号 10000
+知识点
+int 
+cin
+cout
+加减乘除余
+
+
+
+
+
+（3）jj易教卢 时间每次商量
 自我介绍#
 notepad#
 浏览器console
@@ -152,7 +157,7 @@ split
 
 
 
-（4）jj易教上海大三作业 周六晚上7点到9点  teamviewId 1083865490
+（4）jj易教上海大三作业   teamviewId 1083865490
 jj图书唯一人唯一，书表关联人
 作业及完成时间
 实验报告2                                4月19号之前
@@ -174,7 +179,7 @@ mysql
 
 
 
-（5）jj易教上海大一网页作业 周六周日下午3点到5点  teamviewId 1678501331
+（5）jj易教上海大一网页作业  teamviewId 1678501331
 
 
 
