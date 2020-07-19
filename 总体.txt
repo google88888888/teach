@@ -56,6 +56,12 @@ splice
 split
 数组倒装
 数组查重
+找数组中最大值#
+找数组中最小值#
+数组中有1到9若干个，找个数最多的那个
+两数之和https://leetcode-cn.com/problems/two-sum/
+冒泡排序
+有序数组的平方https://leetcode-cn.com/problems/squares-of-a-sorted-array/
 
 
 
