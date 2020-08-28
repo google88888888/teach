@@ -1,27 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <style>
-
-    </style>
-	<script type="text/javascript">
-	    function test(){
-		}
-	</script>
+    <meta charset="utf-8">
+    <title>react的合成事件</title>
 </head>
-<body onload="test()">
-<a href="mailto:571343428@qq.com">联系博主</a>
-<table border="1">
-  <tr>
-    <th>Month</th>
-    <th>Savings</th>
-  </tr>
-  <tr>
-    <td>January</td>
-    <td>$100</td>
-  </tr>
-</table>
+<body>
+    <div id="app"></div>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdn.bootcss.com/babel-standalone/6.22.1/babel.min.js"></script>
+    <script type="text/babel">
+        class MessageBox extends React.Component {
+
+            componentDidMount() {
+                document.addEventListener('click', (e) => {
+                     alert('document 原生事件2')
+                     e.stopImmediatePropagation()
+                })
+                document.addEventListener('click', (e) => {
+                    alert('document 原生事件3')
+                })
+
+                document.body.addEventListener('click', (e) => {
+					e.stopPropagation()
+                    alert('body 原生事件1')
+                })
+                document.body.addEventListener('click', (e) => {
+					// e.stopImmediatePropagation()
+                    alert('body 原生事件2')
+                })
+				
+                document.getElementById('parent').addEventListener('click', (e) => {
+                    alert('parent 原生事件')
+                }, false)
+
+                document.getElementById('child').addEventListener('click', (e) => {
+                    alert('child 原生事件')
+                    //  e.stopPropagation() //原生事件可以阻止合成事件
+                }, false)
+            }
+
+            parent = (e) => {
+                alert('父组件')
+            }
+
+            child = (e) => {
+                alert('子组件')
+                //e.preventDefault()
+				//e.stopPropagation()
+                //e.stopImmediatePropagation()
+                //e.nativeEvent.stopImmediatePropagation()
+            }
+            render() {
+                return (
+                    <div id='parent' onClick={this.parent}>
+                        父组件
+                        <div id='child' onClick={this.child}>子组件</div>
+                    </div>
+                );
+            }
+        }
+        document.addEventListener('click', () => {
+            alert('document 原生事件1')
+        })
+        ReactDOM.render(<MessageBox />, document.getElementById('app'), function () {
+            //console.log('渲染完成啦！！');
+        });
+        document.addEventListener('click', () => {
+            alert('document 原生事件4')
+        })
+    </script>
 </body>
 </html>
