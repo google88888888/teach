@@ -120,78 +120,8 @@ cout
 加减乘除余
 
 
-
-
-
-（3）jj易教卢 时间每次商量
-自我介绍#
-notepad#
-浏览器console
-html基本结构#
-div布局
-图片
-带图片布局
-注释
-变量（undefined boolean number string null object）
-文具名称价格
-各科分数名称价格总和
-加减乘除余
-文字样式（颜色16进制，font-size，font-weight，上下左右居中）
-if
-比较大小方法
-或
-与
-非
-for
-数组（初始化，选择，长度）
-连加100
-border-radius ，border-top-radius ，border-bottom-radius
-opacity
-cursor
-链接
-push
-像素大厨
-手机端
-方法（参数，返回）
-class
-table
-padding
-splice
-split
-数组倒装
-数组查重
-
-
-
-（4）jj易教上海大三作业   teamviewId 1083865490
-jj图书唯一人唯一，书表关联人
-作业及完成时间
-实验报告2                                4月19号之前
-javaee 读书报告                          5月11号之前
-大作业（学生信息系统），有原始代码       5月25号之前
-渗透测试与前端相结合部分工作
-
-自我介绍#
-图片#
-安装软件
-myEclipse安装破解，已给未安装
-jdk，已给未安装
-tomcat
-mysql
-
-前端布局
-
-
-
-
-
-（5）jj易教上海大一网页作业  teamviewId 1678501331
-
-
-（6）阳光js工作，周日下午1点30到3点30，200一小时
-
-
-（7）易教web工作 9月3号，周四，晚上10点30到11点30，300一小时
+（3）阳光java算法，周五周六晚上9点到10点，周日下午1点到3点，200一小时
+（4）易教web工作 隔两天上一次，晚上10点30到11点30，300一小时
 
 
 
