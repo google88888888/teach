@@ -1,0 +1,11 @@
+.global{
+	margin:0 auto;
+	width:960px;
+	height:200px;
+	background:red;
+}
+.title{
+	float:left;
+	width:960px;
+	height:200px;
+}
