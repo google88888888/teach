@@ -1,0 +1,26 @@
+html,body{
+	margin:0;
+	padding:0;
+}
+.content{
+  float:left;
+  width: 100%;
+  background-color: black;
+  color:white;
+}
+.top{
+	float:left;
+	margin-top:10px;
+	width:100%;
+}
+.title-right{
+	color:yellow;
+}
+
+.bottom{
+	float:right;
+	color:yellow;
+	margin-top:10px;
+	margin-bottom:20px;
+	cursor:pointer;
+}

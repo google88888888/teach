@@ -1,0 +1,160 @@
+html,body{
+	margin:0;
+	padding:0;
+}
+.title{
+  float:left;
+  width: 100%;
+  background:black;
+  color:white;
+  padding-top:10px;
+}
+.button{
+	float:left;
+	width:100%;
+	background:black;
+	padding-top:20px;
+	padding-bottom:10px;
+}
+.button-yellow{
+	float:left;
+	color:yellow;
+	margin-left:30px;
+	cursor:pointer;
+}
+.button-green{
+	float:left;
+	color:green;
+	margin-left:30px;
+	cursor:pointer;
+}
+.button-purple{
+	float:left;
+	color:purple;
+	margin-left:30px;
+	cursor:pointer;
+}
+.clear{
+	clear:both;
+}
+.content-wrapper{
+	float:left;
+	width:100%;
+	background:red;
+}
+.content{
+	margin-top:100px;
+	margin-bottom:300px;
+	float:left;
+	width:1250px;
+	height:300px;
+}
+.item-yellow{
+	float:left;
+	width:240px;
+	margin-left:10px;
+	height:90px;
+	margin-top:10px;
+	background:yellow;
+}
+
+.item-green{
+	float:left;
+	width:240px;
+	margin-left:10px;
+	height:90px;
+	margin-top:10px;
+	background:green;
+}
+.item-purple{
+	float:left;
+	width:240px;
+	margin-left:10px;
+	height:90px;
+	margin-top:10px;
+	background:purple;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

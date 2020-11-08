@@ -3,9 +3,31 @@
 	width:1400px;
 }
 .left{
+	position:relative;
 	float:left;
 	width:860px;
 	height:1000px;
+}
+.left-text{
+	position:absolute;
+	left:80px;
+	bottom:100px;
+	width:780px;
+	height:100px;
+}
+.left-text-top{
+	float:left;
+	width:780px;
+	color:white;
+	font-size:40px;
+	font-weight:700px;
+}
+.left-text-bottom{
+	float:left;
+	width:780px;
+	color:white;
+	font-size:40px;
+	font-weight:700px;
 }
 .leftImg{
 	width:860px;
