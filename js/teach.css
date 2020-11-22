@@ -1,22 +1,29 @@
-        .testYellow{
-			margin-left:400px;
-            width:200px;
-			height:50px;
-			background:yellow;
-			transform: skewX(45deg);
-        }
-		.testGreen{
-			position:absolute;
-			margin-left:376px;
-			margin-top:26px;
-            width:50px;
-			height:200px;
-			background:green;
-			transform: skewY(45deg);
-        }
-		.testRed{
-			margin-left:424px;
-            width:200px;
-			height:200px;
-			background:red;
-        }
+	
+.test{
+	background:blue;
+	height: 100px;
+}
+	
+	
+@media screen and (max-width: 1024px) {
+    .test{
+		background:yellow;
+		height: 100px;
+    }
+}
+@media screen and (max-width: 960px) {
+    .test{
+		background:red;
+		height: 100px;
+    }
+
+}
+
+
+@media screen and (max-width: 520px) {
+    .test{
+		background:green;
+		height: 100px;
+    }
+
+}
