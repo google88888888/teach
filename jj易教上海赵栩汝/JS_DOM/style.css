@@ -1,0 +1,66 @@
+html{
+	font-size:62.5%;
+	background-color:#61BFAD;
+}
+
+
+#container{
+	width:100vw;
+	height:100vh;
+	margin-top: 10px;
+
+
+}
+
+  
+
+.button {
+  width: 10rem;
+  height: 5rem;
+  background: #F9F7E8;
+  cursor: pointer;
+
+}
+
+img{
+	position:absolute;
+	width:20rem;
+	height:20rem;
+}
+
+.box1{
+	border:.1rem solid black;
+	height:50px;
+	width:50px;
+	background-color: pink;
+	cursor: pointer;
+}
+
+.box2{
+	border:.1rem solid black;
+	height:50px;
+	width:50px;
+	background-color: yellow;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.box3{
+	border:.1rem solid black;
+	height:50px;
+	width:50px;
+	background-color: blue;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+.box4{
+	border:.1rem solid black;
+	height:50px;
+	width:50px;
+	background-color: red;
+	margin-top: 5px;
+	cursor: pointer;
+}
+
+
