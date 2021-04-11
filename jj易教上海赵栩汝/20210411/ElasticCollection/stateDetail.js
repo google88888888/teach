@@ -36,9 +36,6 @@ base('Table 1').select({
     var leftItem = document.createElement('div');
     leftItem.classList.add("leftItem");
     leftItem.innerHTML = stateArray[x];
-    leftItem.addEventListener('click',function(){
-      location.href="./stateDetail.html?stateName="+this.innerHTML;
-    })
     leftId.append(leftItem);
   }
 
