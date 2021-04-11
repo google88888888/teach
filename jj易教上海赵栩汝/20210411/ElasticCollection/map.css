@@ -5,91 +5,31 @@ html {
   background-color: #FFC907;
 }
 
-.subtitle{
-  font-family:'Aladin', cursive;
-  font-size: 64px;
-  text-align: -webkit-center;
-  margin:auto;
-  margin-top: 80px;
-}
-
-#lightBulb {
-  cursor:pointer;
-}
-
-
-#lightBulb path, #lightBulb circle {
-  animation:colorSwap 5s ease-in infinite alternate;
-}
-
-@keyframes colorSwap {
-  0% {
-    fill: default;
-  }
-  25%{
-    fill:#FF0198;
-  }
-  50%{
-    fill:#FBF932;
-  }
-  100% {
-    fill: #87FF10;
-
-  }
-}
-
-#lightBulb circle:hover{
- fill: blue!important;
-}
-
-
-.next{
-  width:200px;
-  height:200px;
-  margin: 0 auto;
-  cursor: pointer;
-}
-
-.overTips{
-  background: #ffffff;
-  opacity: 0.9;
-  top:240px;
-  left:50%;
+.left{
   position:absolute;
-  z-index: 100;
-  width:800px;
-  height:500px;
-  margin-left:-400px;
-  border-radius: 25px;
-  font-size: 31px;
-}
-.close{
-  float:left;
-  margin-top:20px;
-  margin-left:30px;
-  width:40px;
-  height:40px;
-  border-radius: 20px;
-  background: #FFC907;
-  text-align: center;
-  line-height: 40px;
-  font-size: 30px;
-  color:#000000;
-  cursor: pointer;
-}
-.overTips-top{
-  float:left;
-  width:740px;
-  margin-left: 30px;
-  margin-top:30px;
-}
-.overTips-bottom{
-  float:left;
-  width:740px;
-  margin-left: 30px;
-  margin-top:20px;
+  top:0px;
+  left:0px;
+  bottom: 0px;
+  width:400px;
+  background: #000000;
+  overflow: auto;
 }
 
-.hide{
-  display: none;
+.leftItem{
+  float:left;
+  width:400px;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 50px;
+  background: #000000;
+  color:#ffffff;
+}
+
+.right{
+  position:absolute;
+  top:0px;
+  left:400px;
+  bottom: 0px;
+  right:0px;
+  background:#FFC907;
 }
