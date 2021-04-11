@@ -11,5 +11,5 @@ closeId.addEventListener('click',function(){
 
 
 nextId.addEventListener('click',function(){
-    location.href="./map.html"
+    location.href="./"
 })

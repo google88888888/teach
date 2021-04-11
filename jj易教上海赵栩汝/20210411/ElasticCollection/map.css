@@ -47,6 +47,7 @@ html {
   width:200px;
   height:200px;
   margin: 0 auto;
+  cursor: pointer;
 }
 
 .overTips{
@@ -87,4 +88,8 @@ html {
   width:740px;
   margin-left: 30px;
   margin-top:20px;
+}
+
+.hide{
+  display: none;
 }
