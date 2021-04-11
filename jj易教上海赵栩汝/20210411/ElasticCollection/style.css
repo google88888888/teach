@@ -43,39 +43,48 @@ html {
 }
 
 
-.place-container {
- /* display: inline-block;
-  width: 200px;
-  height: 320px;
-  background-size: cover;
-  margin: 10px;
+.next{
+  width:200px;
+  height:200px;
+  margin: 0 auto;
+}
+
+.overTips{
+  background: #ffffff;
+  opacity: 0.9;
+  top:240px;
+  left:50%;
+  position:absolute;
+  z-index: 100;
+  width:800px;
+  height:500px;
+  margin-left:-400px;
   border-radius: 25px;
-  vertical-align: top;
-  position: relative;
-  border:1px solid black;
-  padding: 1rem;*/
+  font-size: 31px;
 }
-
-.place-title {
-  color: white;
+.close{
+  float:left;
+  margin-top:20px;
+  margin-left:30px;
+  width:40px;
+  height:40px;
+  border-radius: 20px;
+  background: #FFC907;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  color:#000000;
+  cursor: pointer;
 }
-
-
-.photo {
-  width: 250px;
-  height: 320px;
-
+.overTips-top{
+  float:left;
+  width:740px;
+  margin-left: 30px;
+  margin-top:30px;
 }
-
-
-.description{
-  display: none;
-  color:white;
+.overTips-bottom{
+  float:left;
+  width:740px;
+  margin-left: 30px;
+  margin-top:20px;
 }
-
-.city {
-  width: 250px;
-  height: 320px;
-
-}
-
