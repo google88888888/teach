@@ -65,11 +65,66 @@ base('Table 1').select({
       stateArray.push(records[i]);
     }
   }
-  for(var j=0;j<stateArray.length;j++){
-    var item = getItem(stateArray[j]);
+
+  console.log('22222222222222222222');
+  console.log(stateArray);
+  for(var i=0;i<stateArray.length;i++){
+    var item = getItem(stateArray[i]);
     containerId.append(item);
   }
 
+  buttonHistoryId.addEventListener('click',function(){
+    containerId.innerHTML="";
+    for(var i=0;i<stateArray.length;i++){
+      if(stateArray[i].fields.genre[0]=="history"){
+        var item = getItem(stateArray[i]);
+        containerId.append(item);
+      }
+    }
+  })
+  buttonReligionId.addEventListener('click',function(){
+    containerId.innerHTML="";
+    for(var i=0;i<stateArray.length;i++){
+      if(stateArray[i].fields.genre[0]=="religion"){
+        var item = getItem(stateArray[i]);
+        containerId.append(item);
+      }
+    }
+  })
+  buttonMarketId.addEventListener('click',function(){
+    containerId.innerHTML="";
+    for(var i=0;i<stateArray.length;i++){
+      if(stateArray[i].fields.genre[0]=="market"){
+        var item = getItem(stateArray[i]);
+        containerId.append(item);
+      }
+    }
+  })
+  buttonRoadId.addEventListener('click',function(){
+    containerId.innerHTML="";
+    for(var i=0;i<stateArray.length;i++){
+      if(stateArray[i].fields.genre[0]=="road"){
+        var item = getItem(stateArray[i]);
+        containerId.append(item);
+      }
+    }
+  })
+  buttonNatureId.addEventListener('click',function(){
+    containerId.innerHTML="";
+    for(var i=0;i<stateArray.length;i++){
+      if(stateArray[i].fields.genre[0]=="nature"){
+        var item = getItem(stateArray[i]);
+        containerId.append(item);
+      }
+    }
+  })
+  buttonReturnId.addEventListener('click',function(){
+    containerId.innerHTML="";
+    for(var i=0;i<stateArray.length;i++){
+      var item = getItem(stateArray[i]);
+      containerId.append(item); 
+    }
+  })
 
 
   fetchNextPage();
