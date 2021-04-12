@@ -10,34 +10,24 @@ base('Table 1').select({
   maxRecords: 200,
   view: 'Grid view'
 }).eachPage(function page(records, fetchNextPage) {
-  var leftId = document.querySelector('#leftId');
+  var subtitleId = document.querySelector('#subtitleId');
+  var containerId = document.querySelector('#containerId');
+
+
+  var searchURL = window.location.search;
+  searchURL = searchURL.substring(1, searchURL.length);
+  var stateName = decodeURIComponent(searchURL.split("&")[0].split("=")[1]);
+  subtitleId.innerHTML=stateName;
 
   console.log('11111111111111111111111');
   console.log(records);
   var stateArray=[];
   for(var i=0;i<records.length;i++){
-    var hasValueInStateArray=false
-    for(var j=0;j<stateArray.length;j++){
-      if(records[i].fields.state==stateArray[j]){
-        hasValueInStateArray=true;
-        break;
-      }
-    }
-    if(hasValueInStateArray===false){
-      stateArray.push(records[i].fields.state);
+    if(records[i].fields.state==stateName){
+      stateArray.push(records[i]);
     }
   }
 
-  console.log('22222222222222222222222');
-  console.log(stateArray);
-  for(var x=0;x<stateArray.length;x++){
-      console.log('33333333');
-    console.log(stateArray[x]);
-    var leftItem = document.createElement('div');
-    leftItem.classList.add("leftItem");
-    leftItem.innerHTML = stateArray[x];
-    leftId.append(leftItem);
-  }
 
 
   fetchNextPage();

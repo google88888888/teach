@@ -2,34 +2,20 @@ html {
   -webkit-font-smoothing: antialiased;
   font-family: 'Aladin', cursive;
   font-size: 1.5rem;
-  background-color: #FFC907;
+  background-color: #000000;
 }
 
-.left{
-  position:absolute;
-  top:0px;
-  left:0px;
-  bottom: 0px;
-  width:400px;
-  background: #000000;
-  overflow: auto;
+.subtitle{
+  font-family:'Aladin', cursive;
+  font-size: 64px;
+  text-align: -webkit-center;
+  margin:auto;
+  margin-top: 80px;
+  color: #ffffff
 }
 
-.leftItem{
-  float:left;
-  width:400px;
-  height: 60px;
-  line-height: 60px;
-  padding-left: 50px;
-  background: #000000;
-  color:#ffffff;
+.container{
 }
 
-.right{
-  position:absolute;
-  top:0px;
-  left:400px;
-  bottom: 0px;
-  right:0px;
-  background:#FFC907;
+.container-item{
 }

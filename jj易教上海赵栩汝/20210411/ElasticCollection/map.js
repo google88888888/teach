@@ -38,7 +38,7 @@ base('Table 1').select({
     leftItem.classList.add("leftItem");
     leftItem.innerHTML = stateArray[x];
     leftItem.addEventListener('click',function(){
-      location.href="./stateDetail.html?stateName="+this.innerHTML;
+      location.href="./stateDetail.html?stateName="+encodeURIComponent(this.innerHTML);
     })
     leftItem.addEventListener('mouseover',function(){
       rightId.innerHTML='';
