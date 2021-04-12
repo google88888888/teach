@@ -70,10 +70,13 @@ html {
   margin: 0 auto;
   position:relative;
   width:400px;
-  height:400px;
+  height:250px;
 }
 
 .buttonReturn{
+  float: left;
+  margin-left:150px;
+  margin-top:150px;
   background:#FAFF01;
   width:100px;
   height:100px;
@@ -82,24 +85,53 @@ html {
 }
 
 .buttonHistory{
+  position: absolute;
+  top:170px;
+  left:40px;
   width:100px;
   height: 50px;
+  background: url(./png/history.png);
+  cursor: pointer;
 }
 
 .buttonReligion{
+  position: absolute;
+  top:70px;
+  left:60px;
+  transform:rotate(45deg);
   width:100px;
   height: 50px;
+  background: url(./png/religion.png);
+  cursor: pointer;
+  
 }
 .buttonMarket{
+  position: absolute;
+  top:40px;
+  left: 150px;
+  transform:rotate(90deg);
   width:100px;
   height: 50px;
+  background: url(./png/market.png);
+  cursor: pointer;
 }
 .buttonRoad{
+  position: absolute;
+  top:70px;
+  left:250px;
+  transform:rotate(-45deg);
   width:100px;
   height: 50px;
+  background: url(./png/road.png);
+  cursor: pointer;
 }
 
 .buttonNature{
+  position: absolute;
+  top:170px;
+  left:260px;
   width:100px;
   height: 50px;
+  background: url(./png/nature.png);
+  cursor: pointer;
 }

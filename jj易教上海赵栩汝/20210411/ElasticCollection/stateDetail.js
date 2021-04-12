@@ -10,8 +10,46 @@ base('Table 1').select({
   maxRecords: 200,
   view: 'Grid view'
 }).eachPage(function page(records, fetchNextPage) {
+  function getItem(itemParam){
+    console.log('item11111111111111111');
+    console.log(itemParam);
+    var item = document.createElement('div');
+    item.classList.add("item");
+  
+    var itemTop = document.createElement('img');
+    itemTop.classList.add("itemTop");
+    itemTop.src=itemParam.fields.photo[0].url;
+  
+    var itemBottom = document.createElement('div');
+    itemBottom.classList.add("itemBottom");
+    if(itemParam.fields.genre[0]=='history'){
+      itemBottom.classList.add("itemHistory");
+    }
+    if(itemParam.fields.genre[0]=='religion'){
+      itemBottom.classList.add("itemReligion");
+    }
+    if(itemParam.fields.genre[0]=='market'){
+      itemBottom.classList.add("itemMarket");
+    }
+    if(itemParam.fields.genre[0]=='road'){
+      itemBottom.classList.add("itemRoad");
+    }
+    if(itemParam.fields.genre[0]=='nature'){
+      itemBottom.classList.add("itemNature");
+    }
+    item.append(itemTop);
+    item.append(itemBottom)
+    return item;
+  }
+
   var subtitleId = document.querySelector('#subtitleId');
   var containerId = document.querySelector('#containerId');
+  var buttonHistoryId = document.querySelector('#buttonHistoryId');
+  var buttonReligionId = document.querySelector('#buttonReligionId');
+  var buttonMarketId = document.querySelector('#buttonMarketId');
+  var buttonRoadId = document.querySelector('#buttonRoadId');
+  var buttonNatureId = document.querySelector('#buttonNatureId');
+  var buttonReturnId = document.querySelector('#buttonReturnId');
 
 
   var searchURL = window.location.search;
@@ -28,34 +66,7 @@ base('Table 1').select({
     }
   }
   for(var j=0;j<stateArray.length;j++){
-    var item = document.createElement('div');
-    item.classList.add("item");
-
-    var itemTop = document.createElement('img');
-    itemTop.classList.add("itemTop");
-    itemTop.src=stateArray[j].fields.photo[0].url;
-
-    var itemBottom = document.createElement('div');
-    itemBottom.classList.add("itemBottom");
-    if(stateArray[j].fields.genre[0]=='history'){
-      itemBottom.classList.add("itemHistory");
-    }
-    if(stateArray[j].fields.genre[0]=='religion'){
-      itemBottom.classList.add("itemReligion");
-    }
-    if(stateArray[j].fields.genre[0]=='market'){
-      itemBottom.classList.add("itemMarket");
-    }
-    if(stateArray[j].fields.genre[0]=='road'){
-      itemBottom.classList.add("itemRoad");
-    }
-    if(stateArray[j].fields.genre[0]=='nature'){
-      itemBottom.classList.add("itemNature");
-    }
-    
-
-    item.append(itemTop);
-    item.append(itemBottom)
+    var item = getItem(stateArray[j]);
     containerId.append(item);
   }
 
