@@ -37,3 +37,12 @@ html {
   right:0px;
   background:#FFC907;
 }
+.rightImg{
+  position: absolute;
+  left:50%;
+  top:50%;
+  margin-left:-250px;
+  margin-top:-250px;
+  width:500px;
+  height:500px;
+}

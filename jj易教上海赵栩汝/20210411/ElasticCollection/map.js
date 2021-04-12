@@ -11,6 +11,7 @@ base('Table 1').select({
   view: 'Grid view'
 }).eachPage(function page(records, fetchNextPage) {
   var leftId = document.querySelector('#leftId');
+  var rightId = document.querySelector('#rightId');
 
   console.log('11111111111111111111111');
   console.log(records);
@@ -31,13 +32,20 @@ base('Table 1').select({
   console.log('22222222222222222222222');
   console.log(stateArray);
   for(var x=0;x<stateArray.length;x++){
-      console.log('33333333');
+    console.log('3333333333333333333333333333333333');
     console.log(stateArray[x]);
     var leftItem = document.createElement('div');
     leftItem.classList.add("leftItem");
     leftItem.innerHTML = stateArray[x];
     leftItem.addEventListener('click',function(){
       location.href="./stateDetail.html?stateName="+this.innerHTML;
+    })
+    leftItem.addEventListener('mouseover',function(){
+      rightId.innerHTML='';
+      var rightImg = document.createElement('img');
+      rightImg.classList.add("rightImg");
+      rightImg.src="./png/"+this.innerHTML+'.png';
+      rightId.append(rightImg);
     })
     leftId.append(leftItem);
   }
