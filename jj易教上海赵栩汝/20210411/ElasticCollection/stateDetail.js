@@ -27,6 +27,37 @@ base('Table 1').select({
       stateArray.push(records[i]);
     }
   }
+  for(var j=0;j<stateArray.length;j++){
+    var item = document.createElement('div');
+    item.classList.add("item");
+
+    var itemTop = document.createElement('img');
+    itemTop.classList.add("itemTop");
+    itemTop.src=stateArray[j].fields.photo[0].url;
+
+    var itemBottom = document.createElement('div');
+    itemBottom.classList.add("itemBottom");
+    if(stateArray[j].fields.genre[0]=='history'){
+      itemBottom.classList.add("itemHistory");
+    }
+    if(stateArray[j].fields.genre[0]=='religion'){
+      itemBottom.classList.add("itemReligion");
+    }
+    if(stateArray[j].fields.genre[0]=='market'){
+      itemBottom.classList.add("itemMarket");
+    }
+    if(stateArray[j].fields.genre[0]=='road'){
+      itemBottom.classList.add("itemRoad");
+    }
+    if(stateArray[j].fields.genre[0]=='nature'){
+      itemBottom.classList.add("itemNature");
+    }
+    
+
+    item.append(itemTop);
+    item.append(itemBottom)
+    containerId.append(item);
+  }
 
 
 

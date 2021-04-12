@@ -15,7 +15,91 @@ html {
 }
 
 .container{
+  display: flex;
+  justify-content:center ;
+  flex-wrap: wrap 
 }
 
-.container-item{
+.item{
+  float:left;
+  width:300px;
+  height:320px;
+  border-radius: 5px;
+  margin:20px;
+  
+
+}
+
+.itemTop{
+  float:left;
+  width:300px;
+  height:300px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.itemBottom{
+  float:left;
+  width:300px;
+  height:20px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.itemHistory{
+  background:#FFC907;
+}
+
+.itemReligion{
+  background:#FF0198;
+}
+.itemMarket{
+  background:#FF5C01;
+}
+.itemRoad{
+  background:#04FFD2;
+}
+
+.itemNature{
+  background:#87FF10;
+}
+
+
+
+.returnOuter{
+  margin: 0 auto;
+  position:relative;
+  width:400px;
+  height:400px;
+}
+
+.buttonReturn{
+  background:#FAFF01;
+  width:100px;
+  height:100px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.buttonHistory{
+  width:100px;
+  height: 50px;
+}
+
+.buttonReligion{
+  width:100px;
+  height: 50px;
+}
+.buttonMarket{
+  width:100px;
+  height: 50px;
+}
+.buttonRoad{
+  width:100px;
+  height: 50px;
+}
+
+.buttonNature{
+  width:100px;
+  height: 50px;
 }
