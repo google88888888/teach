@@ -4,64 +4,15 @@ html {
   font-size: 1.5rem;
   background-color: #000000;
 }
-.left{
-  position:absolute;
-  top:0px;
-  left:0px;
-  bottom: 0px;
-  width:400px;
-  background: #000000;
-  overflow: auto;
+.iframeContent{
 }
-.leftTitle{
-  float:left;
-  width:400px;
-  height: 40px;
-  font-size: 34px;
-  color: #ff0198;
-  text-align: center;
-  line-height: 40px;
-  margin-top:50px;
-  
-}
-.leftContent{
-  float:left;
-  width:400px;
-  font-size: 26px;
-  color: #ffffff;
-  text-align: center;
-}
-
-.center{
-  position:absolute;
-  top:50px;
-  left:440px;
-}
-.centerImg{
-  
-}
-.centerEnter{
+.centerOut{
   position: absolute;
   width:100px;
   height:100px;
   bottom:0px;
   left:50%;
   margin-left: -50px;
-  background: url(./png/enter.png);
-  cursor: pointer;
-}
-
-.right{
-  position:fixed;
-  top:20px;
-  right:20px;
-  width:40px;
-  height:40px;
-  border-radius: 20px;
-  background: #FFC907;
-  text-align: center;
-  line-height: 40px;
-  font-size: 30px;
-  color:#000000;
+  background: url(./png/out.png);
   cursor: pointer;
 }
