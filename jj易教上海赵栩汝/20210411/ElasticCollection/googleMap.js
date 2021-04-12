@@ -10,9 +10,10 @@ base('Table 1').select({
   maxRecords: 200,
   view: 'Grid view'
 }).eachPage(function page(records, fetchNextPage) {
-
-  var iframeContentId = document.querySelector('#iframeContentId');
+  console.log('records111111111111111111');
+  console.log(records);
   var centerOutId = document.querySelector('#centerOutId');
+  var iframeContentId = document.querySelector('#iframeContentId');
 
   var searchURL = window.location.search;
   searchURL = searchURL.substring(1, searchURL.length);
@@ -23,7 +24,14 @@ base('Table 1').select({
       item=records[i];
     }
   }
-  
+
+  var iframe = document.createElement('iframe');
+  iframe.classList.add('iframeContent');
+  iframe.style.border = "none";
+  // iframe.src = 'https://www.baidu.com/';
+  iframe.src = item.fields.map;
+  iframeContentId.appendChild(iframe);
+
   centerOutId.addEventListener('click',function(){
     location.href="./itemDetail.html?itemName="+encodeURIComponent(item.fields.title);
   })
