@@ -21,7 +21,7 @@ html {
   color: #ff0198;
   text-align: center;
   line-height: 40px;
-  margin-top:50px;
+  margin-top:70px;
   
 }
 .leftContent{
@@ -37,10 +37,15 @@ html {
 
 .center{
   position:absolute;
-  top:50px;
+  top:70px;
+  right:0px;
   left:440px;
+  display: flex;
+  justify-content: center;
 }
 .centerImg{
+  max-width: 800px;
+  max-height: 800px;
   
 }
 .centerEnter{

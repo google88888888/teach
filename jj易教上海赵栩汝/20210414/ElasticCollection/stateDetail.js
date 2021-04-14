@@ -19,6 +19,10 @@ base('Table 1').select({
     var itemTop = document.createElement('img');
     itemTop.classList.add("itemTop");
     itemTop.src=itemParam.fields.photo[0].url;
+
+    var itemCenter = document.createElement('div');
+    itemCenter.classList.add("itemCenter");
+    itemCenter.innerHTML=itemParam.fields.title;
   
     var itemBottom = document.createElement('div');
     itemBottom.classList.add("itemBottom");
@@ -38,6 +42,7 @@ base('Table 1').select({
       itemBottom.classList.add("itemNature");
     }
     item.append(itemTop);
+    item.append(itemCenter);
     item.append(itemBottom);
 
     item.addEventListener('click',function(){
