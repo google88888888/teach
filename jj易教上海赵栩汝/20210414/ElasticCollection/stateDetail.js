@@ -55,6 +55,8 @@ base('Table 1').select({
   var buttonRoadId = document.querySelector('#buttonRoadId');
   var buttonNatureId = document.querySelector('#buttonNatureId');
   var buttonReturnId = document.querySelector('#buttonReturnId');
+  var returnId = document.querySelector('#returnId');
+
 
 
   var searchURL = window.location.search;
@@ -129,6 +131,10 @@ base('Table 1').select({
       var item = getItem(stateArray[i]);
       containerId.append(item); 
     }
+  })
+
+  returnId.addEventListener('click',function(){
+    location.href="./map.html"
   })
 
 

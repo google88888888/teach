@@ -4,7 +4,19 @@ html {
   font-size: 1.5rem;
   background-color: #000000;
 }
-
+.return{
+  position: absolute;
+  left: 20px;
+  top:20px;
+  border:1px solid #ffffff;
+  border-radius: 4px;
+  width:100px;
+  height:40px;
+  text-align: center;
+  line-height: 40px;
+  color: #ffffff;
+  cursor: pointer;
+}
 .subtitle{
   font-family:'Aladin', cursive;
   font-size: 64px;
