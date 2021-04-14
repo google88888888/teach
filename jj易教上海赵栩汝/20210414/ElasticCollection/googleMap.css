@@ -1,0 +1,29 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Aladin', cursive;
+  font-size: 1.5rem;
+  background-color: #000000;
+  margin:0;
+  padding:0;
+}
+body{
+  margin:0;
+  padding:0;
+}
+.iframeContent{
+  padding:0;
+  margin:0;
+  width:100vw;
+  height:100vh;
+  border:none;
+}
+.centerOut{
+  position: absolute;
+  width:100px;
+  height:100px;
+  bottom:0px;
+  left:50%;
+  margin-left: -50px;
+  background: url(./png/out.png);
+  cursor: pointer;
+}

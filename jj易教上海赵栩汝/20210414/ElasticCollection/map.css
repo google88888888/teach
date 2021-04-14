@@ -1,0 +1,48 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Aladin', cursive;
+  font-size: 1.5rem;
+  background-color: #FFC907;
+}
+
+.left{
+  position:absolute;
+  top:0px;
+  left:0px;
+  bottom: 0px;
+  width:400px;
+  background: #000000;
+  overflow: auto;
+}
+
+.leftItem{
+  float:left;
+  width:400px;
+  height: 60px;
+  line-height: 60px;
+  padding-left: 50px;
+  background: #000000;
+  color:#ffffff;
+  cursor: pointer;
+}
+.leftItem:hover{
+  background: #FF0198;
+}
+
+.right{
+  position:absolute;
+  top:0px;
+  left:400px;
+  bottom: 0px;
+  right:0px;
+  background:#FFC907;
+}
+.rightImg{
+  position: absolute;
+  left:50%;
+  top:50%;
+  margin-left:-220px;
+  margin-top:-300px;
+  width:600px;
+  height:600px;
+}

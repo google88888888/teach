@@ -1,0 +1,138 @@
+html {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Aladin', cursive;
+  font-size: 1.5rem;
+  background-color: #000000;
+}
+
+.subtitle{
+  font-family:'Aladin', cursive;
+  font-size: 64px;
+  text-align: -webkit-center;
+  margin:auto;
+  margin-top: 80px;
+  color: #ffffff
+}
+
+.container{
+  display: flex;
+  justify-content:center ;
+  flex-wrap: wrap 
+}
+
+.item{
+  float:left;
+  width:300px;
+  height:320px;
+  border-radius: 5px;
+  margin:20px;
+  cursor: pointer;
+  
+
+}
+
+.itemTop{
+  float:left;
+  width:300px;
+  height:300px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.itemBottom{
+  float:left;
+  width:300px;
+  height:10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.itemHistory{
+  background:#FFC907;
+}
+
+.itemReligion{
+  background:#FF0198;
+}
+.itemMarket{
+  background:#FF5C01;
+}
+.itemRoad{
+  background:#04FFD2;
+}
+
+.itemNature{
+  background:#87FF10;
+}
+
+
+
+.returnOuter{
+  margin: 0 auto;
+  position:relative;
+  width:400px;
+  height:250px;
+}
+
+.buttonReturn{
+  float: left;
+  margin-left:150px;
+  margin-top:150px;
+  background:#FAFF01;
+  width:100px;
+  height:100px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.buttonHistory{
+  position: absolute;
+  top:170px;
+  left:40px;
+  width:100px;
+  height: 50px;
+  background: url(./png/history.png);
+  cursor: pointer;
+}
+
+.buttonReligion{
+  position: absolute;
+  top:100px;
+  left:60px;
+  transform:rotate(45deg);
+  width:100px;
+  height: 50px;
+  background: url(./png/religion.png);
+  cursor: pointer;
+  
+}
+.buttonMarket{
+  position: absolute;
+  top:70px;
+  left: 145px;
+  transform:rotate(90deg);
+  width:100px;
+  height: 50px;
+  background: url(./png/market.png);
+  cursor: pointer;
+}
+.buttonRoad{
+  position: absolute;
+  top:100px;
+  left:240px;
+  transform:rotate(-45deg);
+  width:100px;
+  height: 50px;
+  background: url(./png/road.png);
+  cursor: pointer;
+}
+
+.buttonNature{
+  position: absolute;
+  top:170px;
+  left:260px;
+  width:100px;
+  height: 50px;
+  background: url(./png/nature.png);
+  cursor: pointer;
+}
