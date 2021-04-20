@@ -1,0 +1,114 @@
+/* styles */
+/* called by your view template */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  margin: 25px;
+}
+
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+select {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+
+}
+
+button:hover {
+  background-color: white;
+}
+
+button:active {
+  box-shadow: none;
+}
+.form-area{
+  position:absolute;
+  top:0px;
+  left:0px;
+  right:0px;
+  height:30px;
+  width:800px;
+}
+.textX{
+  float:left;
+  height:30px;
+  line-height:30px;
+}
+.positionX{
+  float:left;
+  margin-left:10px;
+  width:150px;
+  height:30px;
+}
+.textY{
+  float:left;
+  margin-left:10px;
+  height:30px;
+  line-height:30px;
+}
+.positionY{
+  float:left;
+  margin-left:10px;
+  width:150px;
+}
+.textColor{
+  float:left;
+  margin-left:10px;
+  height:30px;
+  line-height:30px;
+}
+.positionColor{
+  float:left;
+  margin-left:10px;
+  width:150px;
+}
+
+.submit{
+  float:left;
+  width:30px;
+  margin-top:5px;
+  margin-left:10px;
+}
+
+
+.show-area{
+  position:absolute;
+  top:30px;
+  left:0px;
+  right:0px;
+  bottom:0px;
+}
+
+.brush-stroke{
+  position:absolute;
+  width:30px;
+  height:30px;
+  border-radius:15px;
+}
