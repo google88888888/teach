@@ -23,10 +23,19 @@ app.get("/", (request, response) => {
 });
 
 // This is where the server recieves and responds to POST requests
-app.post('*', function(request, response, next) {
-  console.log("Server recieved a post request at", request.url);
-  //console.log("body",request.body);
-  response.send({message: "I got your POST request"});
+app.post('*', async function(request, response, next) {
+  console.log("getUrl11111111", request.url);
+  console.log("getbody11111111", request.body);
+  let newActivity=request.body.activity;
+  let newDate=new Date(request.body.date.replace(/-/,"/")).getTime();
+  let newAmount=request.body.scalar;
+  let result=await dbo.insertActivityTable(newActivity,newDate,newAmount);
+  console.log('dataBaseReturn222222222222222');
+  console.log(result);
+  response.send({
+    message: "I got your POST request11111",
+    result:result
+  });
 });
 
 

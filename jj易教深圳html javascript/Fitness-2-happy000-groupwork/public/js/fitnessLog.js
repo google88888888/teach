@@ -102,6 +102,8 @@ function submit_past_activity_onclick() {
     scalar: document.getElementById('pAct-scalar').value,
     units: document.getElementById('pAct-unit').value
   }
+  console.log('data1111111111111111');
+  console.log(data);
 
   if (!past_activity_form_is_valid(data)) {  
     alert("Invalid Past Activity. Please fill in the entire form.");
