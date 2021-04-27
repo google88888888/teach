@@ -48,7 +48,7 @@ const listener = app.listen(3000, () => {
 // call the async test function for the database
 // this is an example showing how the database is used
 // you will eventually delete this call.
-dbo.testDB().catch(
+dbo.initDB().catch(
   function (error) {
     console.log("error:",error);}
 );

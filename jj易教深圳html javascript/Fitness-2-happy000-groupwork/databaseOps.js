@@ -9,29 +9,8 @@ const getOneDB = "select * from ActivityTable where activity = ? and date = ? an
 const allDB = "select * from ActivityTable where activity = ?";
 const selectAllDB = "select * from ActivityTable";
 
-async function testDB () {
-
-  // for testing, always use today's date
-  const today = new Date().getTime();
-
-  // all DB commands are called using await
-
-  // empty out database - probably you don't want to do this in your program
+async function initDB () {
   await db.deleteEverything();
-
-  await db.run(insertDB,["running",today,2.4]);
-  await db.run(insertDB,["walking",today,1.1]);
-  await db.run(insertDB,["walking",today,2.7]);
-  
-  console.log("inserted two items");
-
-  // look at the item we just inserted
-  let result = await db.get(getOneDB,["running",today,2.4]);
-  console.log(result);
-
-  // get multiple items as a list
-  result = await db.all(allDB,["walking"]);
-  console.log(result);
 }
 
 async function insertActivityTable (activity, date, amount) {
@@ -44,4 +23,4 @@ async function insertActivityTable (activity, date, amount) {
 
 
 module.exports.insertActivityTable = insertActivityTable;
-module.exports.testDB = testDB;
+module.exports.initDB = initDB;
