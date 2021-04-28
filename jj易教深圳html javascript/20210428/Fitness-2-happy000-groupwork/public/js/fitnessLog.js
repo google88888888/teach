@@ -124,7 +124,7 @@ function submit_past_activity_onclick() {
   )
   insert_latest_response(pActAdd, newActivity)
 
-  console.log('Past Activity Sending:', data);
+  // console.log('Past Activity Sending:', data);
 
   /* Post Activity Data to Server */
   fetch('/pastActivity', {
@@ -234,6 +234,19 @@ function reminder_load(){
     console.error('Reminder Error:', error);
   });
 
+
+  fetch('/week',{
+    method:'GET',
+    headers:{
+      'Content-Type':'application/json'
+    },
+    //body:JSON.stringify(),
+  })
+  .then(response => response.json())
+  .then(alert("Reminder: Did you" + response))
+  .catch((error) => {
+    console.error('Reminder Error:', error);
+  });
 }
 
 /**

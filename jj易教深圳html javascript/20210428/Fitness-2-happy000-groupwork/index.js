@@ -46,13 +46,13 @@ app.get("/", (request, response) => {
 // });
 
 app.post('/pastActivity', async function(request, response, next) {
-  console.log("Server recieved a post request at", request.url);
-  console.log("body",request.body);
+  // console.log("Server recieved a post request at", request.url);
+  // console.log("body",request.body);
   let newActivity=request.body.activity;
   let newDate=new Date(request.body.date.replace(/-/,"/")).getTime();
   let newAmount=request.body.scalar;
   let result=await dbo.insertActivityTable(newActivity,newDate,newAmount);
-  console.log(result);
+  // console.log(result);
   response.send({
     message: "I got your POST request",
     result:result
@@ -60,14 +60,14 @@ app.post('/pastActivity', async function(request, response, next) {
 });
 
 app.post('/store', async function(request, response, next) {
-  console.log("Server recieved a post request at", request.url);
-  console.log("body",request.body);
+  // console.log("Server recieved a post request at", request.url);
+  // console.log("body",request.body);
   let newActivity=request.body.activity;
   let newDate=new Date(request.body.date.replace(/-/,"/")).getTime();
   let newAmount=JSON.stringify(-1);
   let result=await dbo.insertActivityTable(newActivity,newDate,newAmount);
-  console.log('dataBaseReturn');
-  console.log(result);
+  // console.log('dataBaseReturn');
+  // console.log(result);
   response.send({
     message: "I got your POST request",
     result:result
@@ -105,35 +105,32 @@ dbo.testDB().catch(
 // });
 
 app.get('/reminder', async function(request, response, next) {
-  console.log("Sever received - a get request at", request.url);
+  // console.log("Sever received - a get request at", request.url);
   let result_future = await dbo.recentfutureplan();
-  console.log(result_future);
+  // console.log('result_future11111111111111111');
+  // console.log(result_future);
   response.send({
    message: "get request",
    result:result_future
   })
 });
 
-app.get('/week?date=activity=',async function(request,response,next){
-  console.log("Server received a get request at",request.body.week,request.body.date,request.body.activity);
- var time = new date().getTime();
-  if(request.body.activity==null)
- {
- let activity = await dbo.latestactivity();
-}
- else
+app.get('/week',async function(request,response,next){
+  console.log("Server received a get request at",request.query.date,request.query.activity);
+  var time = new date().getTime();
+  if(request.body.activity==null){
+    let activity = await dbo.latestactivity();
+  }else{
    activity = request.body.activity;
- let date = request.body.date;
- if(request.body.date<time)
- {
- let result = await dbo.getactivitylist(date,activity); 
-response.send({
-    message: "I got activity list",
-    result:result
-  });
-}
- else
- {
-  response.send({ message:"Too late"});
-}
+  }
+  let date = request.body.date;
+  if(request.body.date<time){
+    let result = await dbo.getactivitylist(date,activity); 
+    response.send({
+      message: "I got activity list",
+      result:result
+    });
+  }else{
+    response.send({ message:"Too late"});
+  }
 })

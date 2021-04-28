@@ -2,3 +2,10 @@ https://ecs-162-class-web-page.profamenta.repl.co/fitness2/fitness2.html
 
 运行
 node index.js
+
+
+52行
+
+多个reminder
+
+7验证做的对不对
