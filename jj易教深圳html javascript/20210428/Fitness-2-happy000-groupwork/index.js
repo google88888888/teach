@@ -117,15 +117,17 @@ app.get('/reminder', async function(request, response, next) {
 
 app.get('/week',async function(request,response,next){
   console.log("Server received a get request at",request.query.date,request.query.activity);
-  var time = new date().getTime();
-  if(request.body.activity==null){
-    let activity = await dbo.latestactivity();
+  var time = new Date().getTime();
+  let activity;
+  if(request.query.activity==undefined||request.query.activity==null){
+    let result = await dbo.latestactivity();
+    activity=result[0].activity;
   }else{
-   activity = request.body.activity;
+    activity = request.body.activity;
   }
-  let date = request.body.date;
-  if(request.body.date<time){
-    let result = await dbo.getactivitylist(date,activity); 
+  let date=new Date(request.query.date.replace(/-/,"/")).getTime();
+  if(date<time){
+    let result = await dbo.getActivitylist(date,activity); 
     response.send({
       message: "I got activity list",
       result:result

@@ -18,9 +18,10 @@ async function testDB () {
   // empty out database - probably you don't want to do this in your program
   await db.deleteEverything();
   // return;
-  await db.run(insertDB,["running",1619539200000,-1]);
-  await db.run(insertDB,["walking",1619452800000,-1]);
-  await db.run(insertDB,["Bike",1619798400000,-1]);
+  await db.run(insertDB,["swim",1619625600000,-1]); //2021-4-29
+  await db.run(insertDB,["swim",1619539200000,-1]); //2021-4-28
+  await db.run(insertDB,["swim",1619452800000,-1]); //2021-4-27
+  await db.run(insertDB,["swim",1617206400000,-1]); //2021-4-1
   //console.log("inserted two items");
 
   // look at the item we just inserted
@@ -49,15 +50,15 @@ async function recentfutureplan(){
 }
 
 async function latestactivity(){
-  const activity = "select * from ActivityTable where MAX(date) and amount!=-1";
-  return activity.activity;
+  const result = await db.all(" select * from ActivityTable order by rowIdNum desc LIMIT 1  ");
+  return result;
 }
 
-async function getactivitylist(activity,date)
+async function getActivitylist(date,activity)
 {
-  const list = "select * from ActivityTable where date between"+ date-604800000 +" and"+ date+" and activity='" + activity +"'";
+  let before=date-604800000;
+  const list = "select * from ActivityTable where ( date > "+ before +" and date <"+ date+" ) and activity='" + activity +"'";
   var result = await db.all(list);
-  // console.log(result);
   return result;
 }
 
@@ -65,3 +66,5 @@ async function getactivitylist(activity,date)
 module.exports.insertActivityTable = insertActivityTable;
 module.exports.testDB = testDB;
 module.exports.recentfutureplan = recentfutureplan;
+module.exports.latestactivity = latestactivity;
+module.exports.getActivitylist = getActivitylist;

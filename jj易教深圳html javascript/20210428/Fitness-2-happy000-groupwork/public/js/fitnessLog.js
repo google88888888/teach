@@ -221,7 +221,7 @@ function progress_button_onclick(){
 }
 
 function reminder_load(){
-  fetch('/reminder',{
+  fetch('/week?date=2021-4-28',{
     method:'GET',
     headers:{
       'Content-Type':'application/json'
@@ -235,18 +235,18 @@ function reminder_load(){
   });
 
 
-  fetch('/week',{
-    method:'GET',
-    headers:{
-      'Content-Type':'application/json'
-    },
-    //body:JSON.stringify(),
-  })
-  .then(response => response.json())
-  .then(alert("Reminder: Did you" + response))
-  .catch((error) => {
-    console.error('Reminder Error:', error);
-  });
+  // fetch('/week',{
+  //   method:'GET',
+  //   headers:{
+  //     'Content-Type':'application/json'
+  //   },
+  //   //body:JSON.stringify(),
+  // })
+  // .then(response => response.json())
+  // .then(alert("Reminder: Did you" + response))
+  // .catch((error) => {
+  //   console.error('Reminder Error:', error);
+  // });
 }
 
 /**
