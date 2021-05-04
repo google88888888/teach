@@ -136,84 +136,97 @@
 
 
 $(function(){
-
+  var socket = window.io.connect();
   var Airtable = require('airtable');
+  socket.on('connect', function(){
 
-  Airtable.configure({
-    apiKey: 'keyLcTgqOkYLvbG5V',
-    endpointUrl: 'https://api.airtable.com'
-  });
-  var base = Airtable.base('appugOEfoytzxTsd7');
-  
-  base('table').select({
-    maxRecords: 200,
-    view: 'Grid view'
-  }).eachPage(function page(records, fetchNextPage) {
-    function randomNum(minNum,maxNum){ 
-      return parseInt(Math.random()*(maxNum-minNum+1)+minNum,10); 
-    } 
-
-    var buttonId="Life";
-    $("#lifeId").addClass("active");
-    console.log('records11111111111')
-    console.log(records)
-    $("#messageText").bind('input porpertychange',function(){
-      console.log('value2222222222222')
-      console.log($(this).val())
-      if($(this).val()[$(this).val().length-1]==="?"){
-        let answerArray=[];
-        for(let i=0;i<records.length;i++){
-          let thisGenre=records[i].fields.genre;
-          let inAnswerArray=false
-          if(buttonId=="All"){
-            answerArray.push(records[i].fields.individual_answers);
-          }else{
-            for(var j=0;j<thisGenre.length;j++){
-              if(thisGenre[j]==buttonId){
-                answerArray.push(records[i].fields.individual_answers);
-                break;
-              }
-            }
-          }
-
-        }
-        console.log('answerArray1111111111111');
-        console.log($("#containerId").html(answerArray[randomNum(0,answerArray.length-1)]));
-        $("#containerId").html(answerArray[randomNum(0,answerArray.length-1)]);
-        
-      }
+    Airtable.configure({
+      apiKey: 'keyLcTgqOkYLvbG5V',
+      endpointUrl: 'https://api.airtable.com'
     });
-    $("#lifeId").click(function(){
+    var base = Airtable.base('appugOEfoytzxTsd7');
+    
+    base('table').select({
+      maxRecords: 200,
+      view: 'Grid view'
+    }).eachPage(function page(records, fetchNextPage) {
+      function randomNum(minNum,maxNum){ 
+        return parseInt(Math.random()*(maxNum-minNum+1)+minNum,10); 
+      } 
+
+      var buttonId="Life";
       $("#lifeId").addClass("active");
-      $("#loveId").removeClass("active");
-      $("#workId").removeClass("active");
-      $("#allId").removeClass("active");
-      buttonId="Life";
-    })
-    $("#loveId").click(function(){
-      $("#lifeId").removeClass("active");
-      $("#loveId").addClass("active");
-      $("#workId").removeClass("active");
-      $("#allId").removeClass("active");
-      buttonId="Love";
-    })
-    $("#workId").click(function(){
-      $("#lifeId").removeClass("active");
-      $("#loveId").removeClass("active");
-      $("#workId").addClass("active");
-      $("#allId").removeClass("active");
-      buttonId="Work";
-    })
-    $("#allId").click(function(){
-      $("#lifeId").removeClass("active");
-      $("#loveId").removeClass("active");
-      $("#workId").removeClass("active");
-      $("#allId").addClass("active");
-      buttonId="All";
-    })
-    fetchNextPage();
-  }, function done(err) {
-    if (err) { console.error(err); return; }
+      console.log('records11111111111')
+      console.log(records)
+
+
+      
+      
+        $("#messageText").bind('input porpertychange',function(){
+          console.log('value2222222222222')
+          console.log($(this).val())
+          if($(this).val()[$(this).val().length-1]==="?"){
+            let answerArray=[];
+            for(let i=0;i<records.length;i++){
+              let thisGenre=records[i].fields.genre;
+              let inAnswerArray=false
+              if(buttonId=="All"){
+                answerArray.push(records[i].fields.individual_answers);
+              }else{
+                for(var j=0;j<thisGenre.length;j++){
+                  if(thisGenre[j]==buttonId){
+                    answerArray.push(records[i].fields.individual_answers);
+                    break;
+                  }
+                }
+              }
+    
+            }
+            console.log('answerArray1111111111111');
+            var message=answerArray[randomNum(0,answerArray.length-1)];
+            $("#containerId").html(message);
+              socket.emit('emit-msg', [message], function(data) {
+            });
+            
+          }
+        });
+    
+  
+
+
+      $("#lifeId").click(function(){
+        $("#lifeId").addClass("active");
+        $("#loveId").removeClass("active");
+        $("#workId").removeClass("active");
+        $("#allId").removeClass("active");
+        buttonId="Life";
+      })
+      $("#loveId").click(function(){
+        $("#lifeId").removeClass("active");
+        $("#loveId").addClass("active");
+        $("#workId").removeClass("active");
+        $("#allId").removeClass("active");
+        buttonId="Love";
+      })
+      $("#workId").click(function(){
+        $("#lifeId").removeClass("active");
+        $("#loveId").removeClass("active");
+        $("#workId").addClass("active");
+        $("#allId").removeClass("active");
+        buttonId="Work";
+      })
+      $("#allId").click(function(){
+        $("#lifeId").removeClass("active");
+        $("#loveId").removeClass("active");
+        $("#workId").removeClass("active");
+        $("#allId").addClass("active");
+        buttonId="All";
+      })
+      fetchNextPage();
+    }, function done(err) {
+      if (err) { console.error(err); return; }
+    });
+
   });
 });
 
