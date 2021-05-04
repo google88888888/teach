@@ -1,0 +1,331 @@
+body{
+    text-align:center;
+    margin:auto;
+    margin-top: 50px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.blue{
+    background-color: blue;
+}
+
+
+
+.container {
+  background-color: white;
+  margin-left:50%;
+  width: 700px;
+  height: 2000px;
+  position: absolute;
+  z-index: -1;
+}
+
+.image-container {
+  background-color: white;
+  width: 500px;
+  height: 80px;
+  top: 50%;
+  position: absolute;
+}
+
+.individual-answers {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+  color: black;
+  background-color: blue;
+  margin-top: 240px;
+  display: block;
+  position: absolute;
+}
+
+h3 {
+  font-size: 0.8rem;
+  line-height: 1.8rem;
+  position: block;
+  margin-left: 5rem;
+}
+
+.captions {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+  color: black;
+  margin-top: 240px;
+  position: absolute;
+  display: block;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Futura;
+  margin: 25px;
+}
+
+h1 {
+  font-weight: bold;
+  color: black;
+  font-family: Futura;
+font-style: normal;
+font-weight: 500;
+font-size: 50px;
+line-height: 60px;
+letter-spacing: -0.02em;
+}
+
+h1,
+p {
+  max-width: 600px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+form {
+  margin-bottom: 50px;
+  padding: 50px;
+  background-color: white;
+  /*display: inline-block;*/
+  width: 100%;
+  max-width: 600px;
+  border-radius: 3px;
+  margin-left: 0px;
+}
+
+input {
+  display: block;
+  margin-bottom: 30px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid white;
+  box-shadow: 2px 2px pink;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f02641;
+  color: white;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+  color: white;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+footer > a {
+  color: #BBBBBB;
+}
+
+.nicejob {
+  text-decoration: line-through;
+}
+
+code {
+  background-color: #daffff;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #cdcdcd;
+  opacity: 1; /* Firefox */
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+  display: none; 
+}
+
+input[type=text] {
+  background-color: white;
+  color: black;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}body{
+    text-align:center;
+    margin:auto;
+    margin-top: 50px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.blue{
+    background-color: blue;
+}
+
+
+
+.container {
+  background-color: white;
+  margin-left:50%;
+  width: 700px;
+  height: 2000px;
+  position: absolute;
+  z-index: -1;
+}
+
+.image-container {
+  background-color: white;
+  width: 500px;
+  height: 80px;
+  top: 50%;
+  position: absolute;
+}
+
+.individual-answers {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+  color: black;
+  background-color: blue;
+  margin-top: 240px;
+  display: block;
+  position: absolute;
+}
+
+h3 {
+  font-size: 0.8rem;
+  line-height: 1.8rem;
+  position: block;
+  margin-left: 5rem;
+}
+
+.captions {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2rem;
+  color: black;
+  margin-top: 240px;
+  position: absolute;
+  display: block;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Futura;
+  margin: 25px;
+}
+
+h1 {
+  font-weight: bold;
+  color: black;
+  font-family: Futura;
+font-style: normal;
+font-weight: 500;
+font-size: 50px;
+line-height: 60px;
+letter-spacing: -0.02em;
+}
+
+h1,
+p {
+  max-width: 600px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+form {
+  margin-bottom: 50px;
+  padding: 50px;
+  background-color: white;
+  /*display: inline-block;*/
+  width: 100%;
+  max-width: 600px;
+  border-radius: 3px;
+  margin-left: 0px;
+}
+
+input {
+  display: block;
+  margin-bottom: 30px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 3px;
+  font-size: 15px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: white;
+  border: 1px solid white;
+  box-shadow: 2px 2px pink;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f02641;
+  color: white;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+  color: white;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+  border-top: 1px solid lightgrey;
+}
+
+footer > a {
+  color: #BBBBBB;
+}
+
+.nicejob {
+  text-decoration: line-through;
+}
+
+code {
+  background-color: #daffff;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #cdcdcd;
+  opacity: 1; /* Firefox */
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5rem;
+  display: none; 
+}
+
+input[type=text] {
+  background-color: white;
+  color: black;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}

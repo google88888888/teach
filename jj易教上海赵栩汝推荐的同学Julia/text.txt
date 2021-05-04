@@ -1,0 +1,8 @@
+https://airtable.com/invite/l?inviteId=invSDGtjeKhDSRsla&inviteToken=505c98aa108175ca02beaf2d01ae327d12adfc696e62039c1eb5a27070065ddf
+
+https://airtable.com/tbln4kPwBUwavA9AC/viw0ME1NhRqv1n1ZC?blocks=hide
+
+type ， 输入问题以？结束
+
+（1）拿到？的问题和type去airtable拿一条数据返回
+（2）用websocket存？前面的语句，新开一个页面拿websocket之前存的所有数据
