@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 // Point / to index.html (could just put index.html in public but leaving for reference)
 app.use('/', function(req, res, next){
-  res.sendFile('public/html/index.html', { root : __dirname })
+  res.sendFile('public/index.html', { root : __dirname })
 })
 
 // Users array
