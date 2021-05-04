@@ -185,7 +185,7 @@ $(function(){
             console.log('answerArray1111111111111');
             var message=answerArray[randomNum(0,answerArray.length-1)];
             $("#containerId").html(message);
-              socket.emit('emit-msg', [message], function(data) {
+              socket.emit('emit-msg', [$(this).val()], function(data) {
             });
             
           }
