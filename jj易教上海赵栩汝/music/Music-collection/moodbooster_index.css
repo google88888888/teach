@@ -86,5 +86,11 @@ body{
   margin-left: 100px;
   margin-top:30px;
 }
+.grid-item-line1-first{
+  margin-left: 50px;
+}
+.grid-item-line2-first{
+  margin-left: 150px;
+}
 
 
