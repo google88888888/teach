@@ -15,78 +15,137 @@ html {
   background-color: #8BEAFF;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 2fr 6fr;
-  grid-template-rows: 1fr;
-  grid-gap: 0px 10px;
-  grid-template-areas:
-    ". .";
+.clear{
+  clear: both;
+}
+.container {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  margin-left:-500px;
+  margin-top:-250px;
+  width:1000px;
+  height:500px;
 }
 
-.navigation{
-	grid-column: 1;
-	height:800px;
+.left{
+	float:left;
+  width:200px;
+  height: 500px;
+  background: url(./icon/bar.png);
+  background-size:200px 500px;
+	background-repeat:no-repeat;
+
 }
 
 .right{
-	grid-column:2;
-
+	float:left;
+  width:800px;
+  height: 500px;
 }
 
 .title{
 	font-family: 'Frijole', cursive;
-	font-size:50px;
+	font-size:30px;
+  line-height: 50px;
 	color:white;
-	margin-top: 20px;
+	float:left;
+  width:800px;
+  height:50px;
+  text-align: center;
+
 }
 
 .box{
+  float:left;
+  width:800px;
 	background-color: #10C9F1;
-	height:600px;
-	width:900px;
+	height:450px;
 	border-radius: 25px;
-	margin-top: 20px;
+  cursor: pointer;
+
+}
+.sound{
+	float:right;
+	height:40px;
+	width:40px;
+	float: right;
+	margin-top: 10px;
+	margin-right: 10px;
+  background: url(./icon/sound.png);
+  background-size:40px 40px;
+	background-repeat:no-repeat;
 
 }
 
 .fruit{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  float:left;
+  margin-left: 250px;
+  margin-top:40px;
+  width:300px;
+  height:300px;
+  background: red;
+
+}
+.operate{
+  float:left;
+  width:800px;
+  height:100px;
+  margin-top:10px;
+}
+.name{
+  float: left;
+  width:250px;
+  height:100px;
+  line-height: 100px;
+  text-align: center;
+  color:black;
+	font-family: 'Frijole', cursive;
+	font-size:20px;
 
 }
 
+.input{
+  float: left;
+  margin-top:20px;
+	height:60px;
+	width:300px;
+	border-radius: 25px;
+	border:solid 1px white;
+}
+/* input[type=text]:focus{ background:none; outline:none; border:none; }
+input{ background:none; outline:none; border:none; } */
+input[type=text]:focus{ outline:none; font-size: 20px;}
+input{ outline:none;font-size: 20px;}
 
-.sound{
-	z-index: 1000px;
-	height:50px;
-	width:50px;
-	float: right;
-	margin-top: 10px;
-	margin-right: 10px;
-
+.submit{
+  float:left;
+  cursor: pointer;
+  margin-top: 30px;
+  height:40px;
+  line-height: 40px;
+  font-size: 26px;
+  font-family: 'Frijole', cursive;
+  color:white;
+	background-color:orange;
+	border:solid 2px white;
+  width: 150px;
+  text-align: center;
+  margin-left:40px;
 }
 
 .back{
 	float:right;
 	font-family: 'Frijole', cursive;
 	font-size:20px;
-	margin-right: 30px;
 	margin-top: 20px;
+  height:40px;
+  line-height: 40px;
 	color:white;
 	background-color:orange;
 	border:solid 2px white;
+  width: 100px;
+  text-align: center;
+  cursor:pointer;
 }
-
-#input{
-	height:100px;
-	width:100px;
-	border-radius: 25px;
-	border:solid 1px white;
-}
-
-
-
 
