@@ -1,0 +1,116 @@
+
+html {
+ font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color:white;
+}
+
+
+
+.content {
+    color: #0CFFE2;
+    font-size:20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+.artist-name {
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1;
+  font-weight:700;
+  margin-top:.5rem;
+  color:white;
+}
+
+.exhibit-title {
+  color:#777;
+}
+
+.grid-set {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap:1.5rem;
+  padding:50px 1rem;
+
+}
+
+img {
+    width: 100%;
+}
+
+
+    .grid-item {
+  font-size: 1em;
+  text-align: center;
+  padding-top:1rem;
+
+}
+
+
+#bestselling:hover{
+  text-decoration: none;
+  background-color: red;
+}
+
+#moodbooster:hover{
+  text-decoration: none;
+  background-color: orange;
+}
+
+#sad:hover{
+  text-decoration: none;
+  background-color: blue;
+}
+
+#summervibe:hover {
+  text-decoration: none;
+  background-color: pink;
+}
+
+    main {
+        max-width:90em;
+        margin:0 auto;
+    }
+
+
+
+
+
+h1, h2, h4, h5 {
+  font-family: 'Lora', serif;
+  margin-bottom:.5rem;
+}
+
+h1 {
+  font-size:50px;
+  text-align:center;
+  font-style: italic;
+  padding-bottom: 50px;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1;
+  font-weight:700;
+  padding-bottom:20px;
+  color:white;
+}
+
+h2 {
+  font-size:1.75rem;
+}
+
+h4 {
+  font-size:1rem;
+}
+
+
+li {
+  font-size: 1.25rem;
+  font-family: 'Lora', serif;
+  line-height: 1.5;
+  padding: .5rem 0;
+}
+
+
+
+.mood{
+  text-align: center;
+}
