@@ -1,0 +1,232 @@
+/*包含以下四种的链接*/
+a {
+  text-decoration: none;
+}
+/*正常的未被访问过的链接*/
+a:link {
+  text-decoration: none;
+}
+/*已经访问过的链接*/
+a:visited {
+  text-decoration: none;
+}
+/*鼠标划过(停留)的链接*/
+a:hover {
+  text-decoration: none;
+}
+/* 正在点击的链接*/
+a:active {
+  text-decoration: none;
+}
+.clear{
+  clear: both;
+}
+html {
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color:white;
+  margin:0;
+  padding:0;
+}
+body{
+  margin:0;
+  padding:0;
+}
+.outer{
+  width: 1280px;
+  margin: 0 auto;
+  position: relative;
+}
+.left{
+  position: absolute;
+  top:0px;
+  bottom:0px;
+  left:0px;
+  width:280px;
+  background: #262730;
+
+}
+.leftItem{
+  float:left;
+  width:280px;
+  margin-top:100px;
+  color:#0df2d7;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+}
+.right{
+  float:left;
+  margin-left:280px;
+  width:1000px;
+}
+.title{
+  float:left;
+  font-size: 50px;
+  width:1000px;
+  margin-top:20px;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.titleImage{
+  float:left;
+  width:1000px;
+  margin-top:20px;
+  width:800px;
+  height: 450px;
+  margin-left: 100px;
+  background: url(./assets/bts.jpeg);
+  background-size:800px 450px;
+	background-repeat:no-repeat;
+}
+.grid-item{
+  float: left;
+  width:200px;
+  margin-left: 100px;
+}
+.img-item{
+  float: left;
+  width:200px;
+  height: 200px;
+  margin-top:20px;
+}
+h1, h2, h3,h4, h5 {
+  font-family: 'Lora', serif;
+  margin:0px;
+}
+.artist-name {
+  width:200px;
+  float: left;
+  font-family: 'Work Sans', sans-serif;
+  font-weight:700;
+  margin-top:10px;
+  color:white;
+  text-align: center;
+
+}
+
+.exhibit-title {
+  width:200px;
+  float: left;
+  margin-top:10px;
+  color:#777;
+  text-align: center;
+}
+/* 
+html {
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color:white;
+}
+
+
+
+.content {
+    color: #0CFFE2;
+    font-size:20px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+.artist-name {
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1;
+  font-weight:700;
+  margin-top:.5rem;
+  color:white;
+}
+
+.exhibit-title {
+  color:#777;
+}
+
+.grid-set {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  grid-gap:1.5rem;
+  padding:50px 1rem;
+
+}
+
+img {
+    width: 100%;
+}
+
+
+    .grid-item {
+  font-size: 1em;
+  text-align: center;
+  padding-top:1rem;
+
+}
+
+
+#bestselling:hover{
+  text-decoration: none;
+  background-color: red;
+}
+
+#moodbooster:hover{
+  text-decoration: none;
+  background-color: orange;
+}
+
+#sad:hover{
+  text-decoration: none;
+  background-color: blue;
+}
+
+#summervibe:hover {
+  text-decoration: none;
+  background-color: pink;
+}
+
+    main {
+        max-width:90em;
+        margin:0 auto;
+    }
+
+
+
+
+
+h1, h2, h4, h5 {
+  font-family: 'Lora', serif;
+  margin-bottom:.5rem;
+}
+
+h1 {
+  font-size:50px;
+  text-align:center;
+  font-style: italic;
+  padding-bottom: 50px;
+  font-family: 'Work Sans', sans-serif;
+  line-height: 1;
+  font-weight:700;
+  padding-bottom:20px;
+  color:white;
+}
+
+h2 {
+  font-size:1.75rem;
+}
+
+h4 {
+  font-size:1rem;
+}
+
+
+li {
+  font-size: 1.25rem;
+  font-family: 'Lora', serif;
+  line-height: 1.5;
+  padding: .5rem 0;
+}
+
+
+
+.mood{
+  text-align: center;
+} */
