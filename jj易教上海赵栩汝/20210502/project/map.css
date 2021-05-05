@@ -10,10 +10,42 @@ body{
   margin:0;
   padding:0; 
 }
+.global{
+  width: 1100px;
+  margin:0 auto;
+}
+.title{
+  float:left;
+  width: 1100px;
+  height:50px;
+}
+.text{
+  float:left;
+  margin-left: 20px;
+  height:50px;
+  line-height: 50px;
+  font-size: 30px;
+  font-family: 'Frijole', cursive;
+}
+
+.next{
+  margin-right: 10px;
+  cursor: pointer;
+  margin-top:5px;
+  float:right;
+  height:36px;
+  line-height: 36px;
+  font-size: 30px;
+  font-family: 'Frijole', cursive;
+  color:white;
+	background-color:orange;
+	border:solid 2px white;
+  width: 80px;
+  text-align: center;
+}
 
 .container{
   width: 1100px;
-  margin:0 auto;
 }
 
 .item{
@@ -22,3 +54,7 @@ body{
   height: 100px;
   cursor: pointer;
 }
+.clear{
+  clear: both;
+}
+
