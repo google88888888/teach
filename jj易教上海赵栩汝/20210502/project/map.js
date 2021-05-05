@@ -1,5 +1,6 @@
 
 console.log('find me in main.js');
+
 //生成从minNum到maxNum的随机数
 function randomNum(minNum,maxNum){ 
   return parseInt(Math.random()*(maxNum-minNum+1)+minNum,10); 
@@ -66,3 +67,8 @@ var nextId = document.querySelector('#nextId');
 nextId.addEventListener('click',function(){
   location.href="./word.html"
 })
+
+var player = document.querySelector('#myAudio');
+player.addEventListener("canplay", function() {
+  player.play();
+});
