@@ -61,3 +61,8 @@ for(var i=0;i<78;i++){
 
   container.append(photoUrl);
 }
+
+var nextId = document.querySelector('#nextId');
+nextId.addEventListener('click',function(){
+  location.href="./word.html"
+})

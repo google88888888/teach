@@ -44,12 +44,12 @@ body{
   float:right;
   height:36px;
   line-height: 36px;
-  font-size: 30px;
+  font-size: 26px;
   font-family: 'Frijole', cursive;
   color:white;
 	background-color:orange;
 	border:solid 2px white;
-  width: 80px;
+  width: 120px;
   text-align: center;
 }
 
