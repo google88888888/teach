@@ -25,7 +25,6 @@ var initImages=[
 var allFruitImages=[
   './fruit/apple.png',
   './fruit/banana.png',
-  './fruit/cherrytomato.png',
   './fruit/grape.png',
   './fruit/lemon.png',
   './fruit/lychee.png',
@@ -43,7 +42,7 @@ for(var i=0;i<initImages.length;i++){
   photoUrl.src = initImages[i];
   
   photoUrl.addEventListener('mouseover',function(){
-    let index=randomNum(0,12);
+    let index=randomNum(0,11);
     this.src=allFruitImages[index];
   })
 
@@ -56,7 +55,7 @@ for(var i=0;i<78;i++){
   photoUrl.src = './fruit/plate.png';
 
   photoUrl.addEventListener('mouseover',function(){
-    let index=randomNum(0,12);
+    let index=randomNum(0,11);
     this.src=allFruitImages[index];
   })
 
