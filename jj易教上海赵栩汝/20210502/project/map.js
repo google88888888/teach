@@ -23,20 +23,21 @@ var initImages=[
   './fruit/R.png',
   './fruit/N.png'
 ]
-var allFruitImages=[
-  './fruit/apple.png',
-  './fruit/banana.png',
-  './fruit/grape.png',
-  './fruit/lemon.png',
-  './fruit/lychee.png',
-  './fruit/mango.png',
-  './fruit/orange.png',
-  './fruit/peach.png',
-  './fruit/pear.png',
-  './fruit/pineapple.png',
-  './fruit/strawberry.png',
-  './fruit/watermelon.png',
+var allFruits=[
+  'apple',
+  'banana',
+  'grape',
+  'lemon',
+  'lychee',
+  'mango',
+  'orange',
+  'peach',
+  'pear',
+  'pineapple',
+  'strawberry',
+  'watermelon',
 ]
+var currentFruit;
 for(var i=0;i<initImages.length;i++){
   var photoUrl = document.createElement('img');
   photoUrl.classList.add('item');
@@ -44,7 +45,13 @@ for(var i=0;i<initImages.length;i++){
   
   photoUrl.addEventListener('mouseover',function(){
     let index=randomNum(0,11);
-    this.src=allFruitImages[index];
+    this.src='./fruit/'+allFruits[index]+'.png';
+    currentFruit=allFruits[index];
+  })
+  photoUrl.addEventListener('click',function(){
+    var mp3 = "./sound/"+currentFruit+".mp3";
+    var mp3 = new Audio(mp3);
+    mp3.play();
   })
 
   container.append(photoUrl);
@@ -57,7 +64,13 @@ for(var i=0;i<78;i++){
 
   photoUrl.addEventListener('mouseover',function(){
     let index=randomNum(0,11);
-    this.src=allFruitImages[index];
+    this.src='./fruit/'+allFruits[index]+'.png';
+    currentFruit=allFruits[index];
+  })
+  photoUrl.addEventListener('click',function(){
+    var mp3 = "./sound/"+currentFruit+".mp3";
+    var mp3 = new Audio(mp3);
+    mp3.play();
   })
 
   container.append(photoUrl);
@@ -69,6 +82,6 @@ nextId.addEventListener('click',function(){
 })
 
 var player = document.querySelector('#myAudio');
-player.addEventListener("canplay", function() {
+document.addEventListener('click',function(){
   player.play();
-});
+})
