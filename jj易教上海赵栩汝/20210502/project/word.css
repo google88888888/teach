@@ -123,6 +123,7 @@ html {
 	margin-right: 10px;
   background: url(./icon/sound.png);
   background-size:40px 40px;
+  cursor: pointer;
 	background-repeat:no-repeat;
 
 }
