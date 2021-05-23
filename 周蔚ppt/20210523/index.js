@@ -47,6 +47,30 @@ app.post('/signIn', async function(request, response, next) {
   
 });
 
+app.post('/loginIn', async function(request, response, next) {
+  var userName=request.body.userName;
+  var password=request.body.password;
+  
+  var result=await dbo.getItemOfUserAccountDB(userName,password);
+  //find out whether there is username
+  if(
+    result!=undefined&&
+    result!=null&&
+    result.length>0
+  ){
+    response.send({
+      result: "log in successfully",
+    });
+  }else{
+    response.send({
+      result: "account does not exist",
+    });
+  }
+  
+});
+
+
+
 app.post('/reset', async function(request, response, next) {
   // console.log("Server recieved a post request at", request.url);
   // console.log("body",request.body);
