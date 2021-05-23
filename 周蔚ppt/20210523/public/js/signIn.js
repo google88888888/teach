@@ -1,4 +1,8 @@
-let loginButtonId = document.getElementById("loginButtonId")
+let loginButtonId = document.getElementById("loginButtonId");
+let createAccountButtonId = document.getElementById("createAccountButtonId");
+let forgetPasswordButtonId = document.getElementById("forgetPasswordButtonId");
+
+
 //define this login button
 loginButtonId.addEventListener("click", function(){
     var userName=document.getElementById('userName').value;
@@ -26,4 +30,12 @@ loginButtonId.addEventListener("click", function(){
                 alert('account does not exist');
             }
           })//show in the console back end   
+});
+
+createAccountButtonId.addEventListener("click", function(){
+    window.location.href="/accountCreating.html"; 
+});
+
+forgetPasswordButtonId.addEventListener("click", function(){
+    window.location.href="/forgetPassword.html"; 
 });
