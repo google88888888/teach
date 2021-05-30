@@ -14,8 +14,17 @@ const getItemOfUserInformation = "select * from UserInformatoin where userName =
 //get this database to get the above values, and being used in forget password
 const selectAllDB = "select * from UserInformatoin";
 // it's to get all value for the database
+
+
+const insertDBMaterial = "insert into Material (materialName, stockTime, useTime, availability ,materialNumber) values (?,?,?,?,?)"
 async function testDB () {
   await db.deleteEverything();
+  await db.run(insertDBMaterial,["spicy duck neck",'2021-05-01','2021-05-02',1,5]);
+  await db.run(insertDBMaterial,["spicy duck neck",'2021-05-01','2021-05-02',1,5]);
+  await db.run(insertDBMaterial,["spicy duck neck",'2021-05-03','2021-05-04',0,50]);
+  await db.run(insertDBMaterial,["spicy duck neck",'2021-05-03','2021-05-04',0,50]);
+  await db.run(insertDBMaterial,["spicy duck neck",'2021-05-03','2021-05-04',0,50]);
+  await db.run(insertDBMaterial,["spicy duck neck",'2021-05-05','2021-05-06',1,5]);
 }
 //it's a test function during the way to set the database
 
@@ -25,6 +34,13 @@ async function insertUserInformatoin (userName,phoneOrEmail, password, securityA
   return result;
 }
 //it's to insert the information I need into the database
+
+async function getItemOfMaterialDB (materialName, stockTime, useTime, availability ,materialNumber) {
+  const selectAllDBMaterial = "select * from Material where materialName = ? and stockTime = ? and useTime = ? and availability = ? and materialNumber = ?";
+  let result = await db.all(selectAllDBMaterial,[materialName, stockTime, useTime, availability ,materialNumber]);
+  console.log(result);
+  return result;
+}
 
 async function getItemOfUserNameDB (userName) {
   let result = await db.all(getItemOfUserName,[userName]);
@@ -56,6 +72,8 @@ module.exports.testDB = testDB;
 module.exports.getItemOfUserNameDB = getItemOfUserNameDB;
 module.exports.getItemOfUserInformationDB = getItemOfUserInformationDB;
 module.exports.getItemOfUserAccountDB = getItemOfUserAccountDB;
+module.exports.getItemOfMaterialDB = getItemOfMaterialDB;
+
 //to export these values from the database for my use
 
 
