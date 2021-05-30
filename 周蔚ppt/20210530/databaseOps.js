@@ -17,6 +17,8 @@ const selectAllDB = "select * from UserInformatoin";
 
 
 const insertDBMaterial = "insert into Material (materialName, stockTime, useTime, availability ,materialNumber) values (?,?,?,?,?)"
+
+const insertDBProfit = "insert into Profit (month, profit) values (?,?)"
 async function testDB () {
   await db.deleteEverything();
   await db.run(insertDBMaterial,["spicy duck neck",'2021-05-01','2021-05-02',1,5]);
@@ -25,6 +27,20 @@ async function testDB () {
   await db.run(insertDBMaterial,["spicy duck neck",'2021-05-03','2021-05-04',0,50]);
   await db.run(insertDBMaterial,["spicy duck neck",'2021-05-03','2021-05-04',0,50]);
   await db.run(insertDBMaterial,["spicy duck neck",'2021-05-05','2021-05-06',1,5]);
+
+  await db.run(insertDBProfit,[1,10]);
+  await db.run(insertDBProfit,[2,20]);
+  await db.run(insertDBProfit,[3,30]);
+  await db.run(insertDBProfit,[4,40]);
+  await db.run(insertDBProfit,[5,50]);
+  await db.run(insertDBProfit,[6,60]);
+  await db.run(insertDBProfit,[7,70]);
+  await db.run(insertDBProfit,[8,80]);
+  await db.run(insertDBProfit,[9,90]);
+  await db.run(insertDBProfit,[10,100]);
+  await db.run(insertDBProfit,[11,110]);
+  await db.run(insertDBProfit,[12,120]);
+
 }
 //it's a test function during the way to set the database
 
@@ -41,6 +57,16 @@ async function getItemOfMaterialDB (materialName, stockTime, useTime, availabili
   console.log(result);
   return result;
 }
+
+async function getItemOfProfitDB (startTime, endTime) {
+  const selectAllDBProfit = "select * from Profit where month >= ? and month <= ?";
+  let result = await db.all(selectAllDBProfit,[startTime, endTime]);
+  // const selectAllDBProfit = "select * from Profit";
+  // let result = await db.all(selectAllDBProfit);
+  console.log(result);
+  return result;
+}
+
 
 async function getItemOfUserNameDB (userName) {
   let result = await db.all(getItemOfUserName,[userName]);
@@ -73,6 +99,8 @@ module.exports.getItemOfUserNameDB = getItemOfUserNameDB;
 module.exports.getItemOfUserInformationDB = getItemOfUserInformationDB;
 module.exports.getItemOfUserAccountDB = getItemOfUserAccountDB;
 module.exports.getItemOfMaterialDB = getItemOfMaterialDB;
+module.exports.getItemOfProfitDB = getItemOfProfitDB;
+
 
 //to export these values from the database for my use
 
