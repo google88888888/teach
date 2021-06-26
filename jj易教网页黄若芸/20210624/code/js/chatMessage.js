@@ -12,6 +12,7 @@ $(document).ready(function(){
             '<div class="clear"></div>'+
             '</div>'
         )
+        $("#messageInput").val('');
     });
 
     $("#return,#close").click(function(){

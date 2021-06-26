@@ -181,4 +181,5 @@ html,body{
   padding:0.25rem;
   color:white;
   font-size:0.16rem;
+  word-wrap: break-word;
 }
