@@ -15,4 +15,8 @@ $(document).ready(function(){
     navigator4.addEventListener("click", function(){
         window.location.href="./my.html"; 
     });
+
+    $(".item").click(function(){
+        window.location.href="./chatMessage.html"; 
+    });
 });

@@ -15,4 +15,18 @@ $(document).ready(function(){
     navigator4.addEventListener("click", function(){
         window.location.href="./my.html"; 
     });
+
+
+    var home = document.getElementById("home");
+    home.addEventListener("click", function(){
+        window.location.href="./home.html"; 
+    });
+    var myChatting = document.getElementById("myChatting");
+    myChatting.addEventListener("click", function(){
+        window.location.href="./chat.html"; 
+    });
+    var myShelf = document.getElementById("myShelf");
+    myShelf.addEventListener("click", function(){
+        window.location.href="./shelf.html"; 
+    });
 });
