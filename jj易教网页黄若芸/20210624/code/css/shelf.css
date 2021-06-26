@@ -116,8 +116,7 @@ html,body{
 }
 .continue{
   float:left;
-  width: 4.14rem;
-  padding-left:0.25rem;
+  margin-left:0.25rem;
   font-size: 0.16rem;
   color: #000000;
   margin-top:0.4rem;
