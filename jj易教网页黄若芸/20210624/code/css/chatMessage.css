@@ -124,12 +124,14 @@ html,body{
 .center{
   float:left;
   width: 4.14rem; 
-  padding-top:0.2rem;
+  height: calc(100vh - 2rem);
+  overflow: auto;
 }
 .leftItem{
   float:left;
   width: 2rem; 
   margin-left:0.25rem;
+  margin-top:0.1rem;
 }
 .leftImg{
   float:left;
@@ -158,6 +160,7 @@ html,body{
   float:right;
   width: 2rem; 
   margin-right:0.25rem;
+  margin-top:0.1rem;
 }
 .rightImg{
   float:right;
