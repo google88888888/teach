@@ -2,9 +2,105 @@ html,body{
 	margin:0;
 	padding:0;
 }
+.clear{
+  clear:both;
+}
 .global{
   float:left;
   width: 4.14rem;
-  height:1rem;
-  background-color: red;
+  margin-bottom: 0.4rem;
+}
+.topImage{
+  float:left;
+  position: relative;
+  width: 4.14rem;
+  height: 4.48rem;
+  background: #5075d4;
+  border-bottom-left-radius:0.3rem;
+  border-bottom-right-radius:0.3rem;
+}
+.topImagePng{
+  float:left;
+  width: 4.14rem;
+  height: 4.48rem;
+}
+.topImageMessage{
+  float:left;
+  width: 4.14rem;
+  bottom:0rem;
+  position: absolute;
+  font-size: 0.39rem;
+  text-align: center;
+  color: #6c8edf;
+}
+.center{
+  float:left;
+  position: relative;
+  width: 4.14rem;
+}
+.centerLeftImage{
+  float:left;
+  position: relative;
+  width: 2.85rem;
+}
+.centerLeftImagePng{
+  float:left;
+  position: relative;
+  width: 2.85rem;
+}
+.centerRightImage{
+  float:right;
+  margin-top:0.6rem;
+  position: relative;
+  width: 1.1rem;
+}
+.centerRightImagePng{
+  float:left;
+  position: relative;
+  width: 1.1rem;
+}
+.signIn{
+  float:left;
+  position: relative;
+  width: 3.88rem;
+  height:0.6rem;
+  margin-left:0.12rem;
+  background: #5075d4;
+  color:#ffffff;
+  font-size: 0.22rem;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  text-align: center;
+  line-height: 0.6rem;
+}
+.signIn{
+  float:left;
+  position: relative;
+  width: 3.88rem;
+  height:0.6rem;
+  margin-left:0.12rem;
+  background: #5075d4;
+  color:#ffffff;
+  font-size: 0.22rem;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  text-align: center;
+  line-height: 0.6rem;
+}
+
+.signUp{
+  float:left;
+  position: relative;
+  width: 3.88rem;
+  height:0.6rem;
+  margin-left:0.12rem;
+  background: #ffffff;
+  color:#5075d4;
+  border:0.03rem solid #5075d4;
+  font-size: 0.22rem;
+  font-weight: bold;
+  border-radius: 0.3rem;
+  text-align: center;
+  line-height: 0.6rem;
+  margin-top:0.2rem;
 }
