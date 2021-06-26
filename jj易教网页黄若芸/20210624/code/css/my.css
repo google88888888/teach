@@ -71,67 +71,105 @@ html,body{
 
 
 
-.item{
+.my{
+  float:left;
+  width: 4.14rem;
+  margin-top:0.76rem;
+  padding-left:0.25rem;
+  font-size:0.36rem;
+  color: #5075d4;
+}
+.profile{
   float:left;
   position: relative;
   width: 4.14rem;
-  height: 1.40rem;
+  height:1.8rem;
+  margin-top:0.5rem;
 }
-.image{
+.profileImg{
   float:left;
   position: relative;
-  width: 0.9rem;
-  height:0.9rem;
+  width: 0.76rem;
+  height:1.8rem;
   margin-left:0.25rem;
-  margin-top:0.25rem;
 }
-.imagePng{
+.profileImgPng{
   float:left;
   position: relative;
-  width: 0.9rem;
-  height:0.9rem;
+  width: 0.76rem;
+  height:0.76rem;
 }
-.nameAndTime{
+.lvOuter{
   float:left;
   position: relative;
-  width: 2.5rem;
+  width: 2.7rem;
   margin-left:0.25rem;
-  margin-top:0.35rem;
-  height:0.2rem;
-  line-height:0.2rem;
 }
-.name{
+.lv{
   float:left;
   position: relative;
-  font-size: 0.2rem;
+  width: 0.56rem;
+  height:0.26rem;
+  border-radius: 0.04rem;
+  line-height:0.26rem;
+  text-align: center;
+  font-size: 0.12rem;
   font-weight: bold;
-  color:#5075d4;
+  color:#7591db;
+  background: #d3dbeb;
 }
-.time{
-  float:right;
-  position: relative;
-  font-size: 0.12rem;
-  color:#454545;
-}
-.message{
+.beginner{
   float:left;
   position: relative;
-  font-size: 0.12rem;
-  margin-top:0.2rem;
-  width: 2.5rem;
+  width: 2.7rem;
+  margin-top:0.15rem;
   margin-left:0.25rem;
-  height:0.2rem;
-  line-height:0.2rem;
-  color:#484848;
+  font-size: 0.35rem;
+  font-weight: bold;
+  color:#000000;
 }
-.line{
+.count{
   float:left;
   position: relative;
+  width: 2.7rem;
   margin-left:0.25rem;
-  width: 3.64rem;
-  height: 0.01rem;
-  background: #9e9e9e;
-  margin-top:0.2rem;
+  margin-top:0.1rem;
+}
+.countTextItem{
+  float:left;
+  position: relative;
+  width:0.8rem;
+  margin-left:0rem;
+  font-size:0.14rem;
+  color:#4f73d2;
+  font-weight: bold;
+}
+.countValueItem{
+  float:left;
+  position: relative;
+  width:0.8rem;
+  margin-left:0rem;
+  font-size:0.14rem;
+  color:#464646;
+  font-weight: bold;
 }
 
 
+.account{
+  float:left;
+  width: 4.14rem;
+  margin-top:0.16rem;
+  padding-left:0.25rem;
+  font-size:0.16rem;
+  color: #5075d4;
+  font-weight: bold;
+}
+.item{
+  float:left;
+  width: 4.14rem;
+  margin-top:0.26rem;
+  padding-left:0.25rem;
+  font-size:0.26rem;
+  color: #000000;
+  font-weight: bold;
+}
