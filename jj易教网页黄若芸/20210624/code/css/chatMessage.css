@@ -11,127 +11,171 @@ html,body{
   margin-bottom: 0.9rem;
 }
 
-.navigator{
+.bottom{
   position: fixed;
   width: 4.14rem;
   bottom: 0rem;
-  height: 0.9rem;
+  height: 0.95rem;
   background: #ffffff;
   border-top: 1px solid #9e9e9e;
-}
-.navigator1{
-  float:left;
-  width: 0.3rem;
-  height: 0.3rem;
-  margin-top:0.24rem;
-  margin-left:0.58rem;
-}
-.navigator1Png{
-  float:left;
-  width: 0.3rem;
-  height: 0.3rem;
-}
-.navigator2{
-  float:left;
-  width: 0.3rem;
-  height: 0.3rem;
-  margin-top:0.24rem;
-  margin-left:0.58rem;
-}
-.navigator2Png{
-  float:left;
-  width: 0.3rem;
-  height: 0.3rem;
-}
-.navigator3{
-  float:left;
-  width: 0.3rem;
-  height: 0.3rem;
-  margin-top:0.24rem;
-  margin-left:0.58rem;
-}
-.navigator3Png{
-  float:left;
-  width: 0.3rem;
-  height: 0.3rem;
-}
-.navigator4{
-  float:left;
-  width: 0.3rem;
-  height: 0.3rem;
-  margin-top:0.24rem;
-  margin-left:0.58rem;
-}
-.navigator4Png{
-  float:left;
-  width: 0.3rem;
-  height: 0.3rem;
-}
-
-
-
-
-.item{
-  float:left;
-  position: relative;
-  width: 4.14rem;
-  height: 1.40rem;
-}
-.image{
-  float:left;
-  position: relative;
-  width: 0.9rem;
-  height:0.9rem;
-  margin-left:0.25rem;
-  margin-top:0.25rem;
-}
-.imagePng{
-  float:left;
-  position: relative;
-  width: 0.9rem;
-  height:0.9rem;
-}
-.nameAndTime{
-  float:left;
-  position: relative;
-  width: 2.5rem;
-  margin-left:0.25rem;
-  margin-top:0.35rem;
-  height:0.2rem;
-  line-height:0.2rem;
-}
-.name{
-  float:left;
-  position: relative;
-  font-size: 0.2rem;
-  font-weight: bold;
-  color:#5075d4;
-}
-.time{
-  float:right;
-  position: relative;
-  font-size: 0.12rem;
-  color:#454545;
 }
 .message{
   float:left;
   position: relative;
-  font-size: 0.12rem;
-  margin-top:0.2rem;
-  width: 2.5rem;
-  margin-left:0.25rem;
-  height:0.2rem;
-  line-height:0.2rem;
-  color:#484848;
+  width: 3rem;
+  height: 0.95rem;
 }
-.line{
+.messageInput{
+  float:left;
+  width: 2.8rem;
+  height:0.95rem;
+	outline:none;
+	border-width:0px;
+  background: #dfdfdf;
+  font-size: 0.22rem;
+  font-weight: bold;
+  line-height: 0.6rem;
+  padding-left:0.2rem;
+}
+.send{
+  float:right;
+  width: 1.14rem;
+  height:0.95rem;
+  background: #5075d4;
+  font-size:0.20rem;
+  line-height:0.95rem;
+  text-align: center;
+}
+
+
+.top{
+  float:left;
+  width: 4.14rem; 
+  background: #dfdfdf;
+  height:0.8rem;
+}
+
+.return{
   float:left;
   position: relative;
+  width: 0.2rem;
+  height: 0.24rem;
   margin-left:0.25rem;
-  width: 3.64rem;
-  height: 0.01rem;
-  background: #9e9e9e;
-  margin-top:0.2rem;
+  margin-top:0.25rem;
+}
+.returnPng{
+  float:left;
+  position: relative;
+  width: 0.2rem;
+  height: 0.24rem;
+}
+.count{
+  float:left;
+  position: relative;
+  width: 0.24rem;
+  height: 0.24rem;
+  border-radius: 0.12rem;
+  background:#b7b7b7;
+  color:white;
+  line-height: 0.24rem;
+  text-align: center;
+  margin-left:0.1rem;
+  margin-top:0.25rem;
+  font-size:0.12rem;
+}
+
+.blueCircle{
+  float:left;
+  position: relative;
+  width: 0.54rem;
+  height: 0.54rem;
+  border-radius: 0.27rem;
+  background:#5075d4;
+  margin-left:0.75rem;
+  margin-top:0.14rem;
+}
+.redCircle{
+  float:left;
+  position: relative;
+  width: 0.54rem;
+  height: 0.54rem;
+  border-radius: 0.27rem;
+  background:#dd8872;
+  margin-left:-0.27rem;
+  margin-top:0.14rem;
 }
 
 
+.close{
+  float:right;
+  position: relative;
+  width: 0.3rem;
+  height: 0.3rem;
+  margin-right:0.25rem;
+  margin-top:0.22rem;
+}
+.closePng{
+  float:right;
+  position: relative;
+  width: 0.3rem;
+  height: 0.3rem;
+}
+
+.center{
+  float:left;
+  width: 4.14rem; 
+  padding-top:0.2rem;
+}
+.leftItem{
+  float:left;
+  width: 2rem; 
+  margin-left:0.25rem;
+}
+.leftImg{
+  float:left;
+  margin-left:0.1rem;
+  width: 0.4rem; 
+  height:0.1rem;
+}
+.leftImgPng{
+  float:left;
+  width: 0.4rem; 
+  height:0.1rem;
+}
+.leftContent{
+  float:left;
+  width: 2rem; 
+  background:#5075d4;
+  border-radius: 0.25rem;
+  padding:0.25rem;
+  color:white;
+  font-size:0.16rem;
+}
+
+
+
+.rightItem{
+  float:right;
+  width: 2rem; 
+  margin-right:0.25rem;
+}
+.rightImg{
+  float:right;
+  margin-right:0.1rem;
+  width: 0.4rem; 
+  height:0.1rem;
+}
+.rightImgPng{
+  float:right;
+  width: 0.4rem; 
+  height:0.1rem;
+}
+.rightContent{
+  float:right;
+  width: 2rem; 
+  background:#dd8872;
+  border-radius: 0.25rem;
+  padding:0.25rem;
+  color:white;
+  font-size:0.16rem;
+}
