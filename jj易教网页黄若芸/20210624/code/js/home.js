@@ -9,7 +9,7 @@ $(document).ready(function(){
     });
     var navigator3 = document.getElementById("navigator3");
     navigator3.addEventListener("click", function(){
-        window.location.href="./chat.html"; 
+        window.location.href="./chat.html";  
     });
     var navigator4 = document.getElementById("navigator4");
     navigator4.addEventListener("click", function(){
